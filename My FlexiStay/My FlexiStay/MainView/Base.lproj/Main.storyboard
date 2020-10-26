@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kza-1x-k2R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kza-1x-k2R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -477,7 +477,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qzj-Dg-6R4">
-                                <rect key="frame" x="58" y="196" width="288" height="25"/>
+                                <rect key="frame" x="58" y="196" width="288" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1644,7 +1644,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="kTr-hQ-hHL">
-                                                        <rect key="frame" x="30" y="120" width="35.000000000000014" height="37.000000000000014"/>
+                                                        <rect key="frame" x="30" y="120" width="35" height="37"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="EU7-Gk-FZK">
                                                         <rect key="frame" x="65" y="282" width="35.000000000000014" height="37.000000000000014"/>
@@ -1723,7 +1723,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="tCK-Kb-3Vi">
-                                                        <rect key="frame" x="239" y="120" width="35" height="37.000000000000014"/>
+                                                        <rect key="frame" x="239" y="120" width="35" height="37"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gym" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbM-F4-h9x">
                                                         <rect key="frame" x="108" y="1069" width="46" height="21"/>
@@ -3403,7 +3403,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="F6a-U0-aGv">
-                                                <rect key="frame" x="155" y="30" width="45.000000000000014" height="36.000000000000014"/>
+                                                <rect key="frame" x="155" y="30" width="45" height="36"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3594,7 +3594,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="VPh-9Q-5X7">
-                                        <rect key="frame" x="308" y="99" width="86" height="85.000000000000014"/>
+                                        <rect key="frame" x="308" y="99" width="86" height="85"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-2J-DEL">
                                         <rect key="frame" x="308" y="312" width="86" height="85"/>
@@ -3742,6 +3742,10 @@
             <point key="canvasLocation" x="6844.9275362318849" y="12.723214285714285"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Abl-xz-nC4"/>
+        <segue reference="xJU-6Q-PiW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="1. Landing Page" width="125" height="256"/>
         <image name="2 Education lcon" width="153" height="119"/>
@@ -3751,16 +3755,12 @@
         <image name="36 × 36 area in 48 × 48 (hdpi)-14" width="49" height="49"/>
         <image name="36 × 36 area in 48 × 48 (hdpi)-9" width="49" height="49"/>
         <image name="Images-11" width="481" height="361"/>
-        <image name="circle" catalog="system" width="64" height="60"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
         <image name="icons8-facebook-circled-48" width="48" height="48"/>
         <image name="icons8-google-plus-48" width="48" height="48"/>
-        <image name="largecircle.fill.circle" catalog="system" width="64" height="60"/>
+        <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
         <image name="lauch screen" width="1536" height="3156"/>
-        <image name="message" catalog="system" width="64" height="56"/>
-        <image name="teletype" catalog="system" width="64" height="48"/>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="teletype" catalog="system" width="128" height="98"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Abl-xz-nC4"/>
-        <segue reference="xJU-6Q-PiW"/>
-    </inferredMetricsTieBreakers>
 </document>

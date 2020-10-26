@@ -23,20 +23,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img1: UIImageView!
-//    var picker = UIPickerView()
-    
-    
-//    let villaname = ["Apartment", "Independant House/Villa", "Gated community Villa"]
-//    let villaname1 = ["Demo", "Data", "House"]
-//    let villaname2 = ["1BHK", "2BHK", "3BHK", "4BHK"]
-//    let villanme3 = ["1Rk", "2Rk", "3Rk", "4Rk"]
-    
-//    var villa = [[String]]()
-//    var aprview = UIPickerView()
-//    var bhkview = UIPickerView()
-//    var floortype = UIPickerView()
-//    var totalfloor = UIPickerView()
-//
+
     let imgn1 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-18.png"
     let imgn2 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/Icons/Back1+48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-14.png"
     
@@ -51,7 +38,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
        var activevlue = String()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
         
         
         loadAndSetupCustomview()
@@ -287,102 +274,3 @@ extension UIImageView {
     }
 }
 
-//extension Property_Details : UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
-//
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        switch pickerView.tag {
-//        case 1:
-//            return villaname.count
-//        case 2:
-//            return villaname1.count
-//        case 3:
-//            return villaname2.count
-//        case 4:
-//            return villanme3.count
-//        default:
-//            return 1
-//        }
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        switch pickerView.tag {
-//     case 1:
-//         return villaname[row]
-//     case 2:
-//         return villaname1[row]
-//     case 3:
-//         return villaname2[row]
-//     case 4:
-//         return villanme3[row]
-//     default:
-//         return "Data not found"
-//     }
-//
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        switch pickerView.tag {
-//            case 1:
-//                txt1.text = villaname[row]
-//                txt1.resignFirstResponder()
-//            case 2:
-//                 txt4.text = villaname1[row]
-//                 txt4.resignFirstResponder()
-//            case 3:
-//                txt5.text = villaname2[row]
-//                txt5.resignFirstResponder()
-//            case 4:
-//                 txt9.text = villanme3[row]
-//                txt9.resignFirstResponder()
-//            default:
-//                return
-//  }
-//    }
-//
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        if textField == txt1{
-//                  print("txt1")
-//        }
-//        else if textField == txt2{
-//            print("txt2")
-//        }
-//    }
-//
-        
-    
-    
-
-//let citiesname = ["CapeTown", "Firefox", "Demo", "Ahmadabad", "Mumbai"]
-//var pickerview = UIPickerView()
-//
-//
-//@IBOutlet weak var cities : UITextField!
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        pickerview.delegate = self
-//        pickerview.dataSource = self
-//        citiesfield.inputView = pickerview
-//        citiesfield.placeholder = "PickerView"
-//}
-//func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//    return 1
-//}
-//
-//func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//    return citiesname.count
-//}
-//
-//func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//    return citiesname[row]
-//}
-//
-//func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//    citiesfield.text = citiesname[row]
-//    citiesfield.resignFirstResponder()
-//}

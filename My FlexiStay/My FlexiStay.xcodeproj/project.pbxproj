@@ -34,6 +34,9 @@
 		18F3FA492521F56E0084412E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA482521F56E0084412E /* Assets.xcassets */; };
 		18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */; };
 		18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */; };
+		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
+		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
+		51D03D512546873600A2E1D7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		18F3FA4B2521F56E0084412E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F3FA4D2521F56E0084412E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo1234ViewController.swift; sourceTree = "<group>"; };
+		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
+		51D03D502546873600A2E1D7 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,34 +113,165 @@
 			isa = PBXGroup;
 			children = (
 				18BBD2C5252C435500B777E8 /* Fonts */,
-				18F3FA3F2521F5660084412E /* AppDelegate.swift */,
-				18F3FA412521F5660084412E /* SceneDelegate.swift */,
-				18F3FA432521F5660084412E /* ViewController.swift */,
-				18F3FA452521F5660084412E /* Main.storyboard */,
-				18E693D72541B6A2007D834B /* My Listing.swift */,
-				18C0321C25343DF0006EADBF /* Schedule.swift */,
-				18C0321E25347B3C006EADBF /* Posting done.swift */,
-				18F3AE092531E47200D9DFB8 /* Amenities.swift */,
-				18F3AE072531B21000D9DFB8 /* Upload PIctures.swift */,
-				1819264C2530539E00CFD535 /* Property Details.swift */,
-				1819264A253041BC00CFD535 /* Locality Details.swift */,
-				18F3AE0525319E0300D9DFB8 /* Locality Details 2.swift */,
-				1886A85E252EFAA6001D1F81 /* Register_Page2.swift */,
-				18D592E8252DBAAF00F1511B /* Profile Page.swift */,
-				18991EA3252B3D670023334C /* Demo2ViewController.swift */,
-				18991EA1252B275F0023334C /* Register Page.swift */,
-				1848CF3C25359B820000BA5E /* Register_page2File.swift */,
-				184D2C552528792D00493819 /* Buy View.swift */,
-				18A38C72252613C6009F406D /* DemoViewController.swift */,
-				18B884392524B43A0071A612 /* Imageslider.swift */,
-				18D6468A2524616C00EA2901 /* HomePage.swift */,
-				184D2C5325285E4A00493819 /* PostView.swift */,
-				18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */,
-				18F3FA482521F56E0084412E /* Assets.xcassets */,
-				18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */,
+				51D03D4A2546866700A2E1D7 /* SupportingFile */,
+				51D03D3E254682F400A2E1D7 /* MainView */,
+				51D03D3C2546828F00A2E1D7 /* MainViewController */,
+				51D03D3F2546833000A2E1D7 /* HomePageController */,
+				51D03D3D254682BD00A2E1D7 /* PropertyDetailsController */,
+				51D03D432546848500A2E1D7 /* PropertyListing */,
+				51D03D46254685DF00A2E1D7 /* ScheduleController */,
+				51D03D44254684AA00A2E1D7 /* AmenitiesController */,
+				51D03D45254685A400A2E1D7 /* PostiingDoneController */,
+				51D03D422546842E00A2E1D7 /* LocalityDetalisController */,
+				51D03D41254683DA00A2E1D7 /* RegisterController */,
+				51D03D472546862500A2E1D7 /* ProfilePageController */,
+				51D03D402546835800A2E1D7 /* HomeBuyControllers */,
+				51D03D482546864400A2E1D7 /* ImageSlider */,
+				51D03D492546865100A2E1D7 /* PostViewController */,
 				18F3FA4D2521F56E0084412E /* Info.plist */,
 			);
 			path = "My FlexiStay";
+			sourceTree = "<group>";
+		};
+		51D03D3C2546828F00A2E1D7 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18A38C72252613C6009F406D /* DemoViewController.swift */,
+				18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */,
+				18F3FA432521F5660084412E /* ViewController.swift */,
+				18991EA3252B3D670023334C /* Demo2ViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		51D03D3D254682BD00A2E1D7 /* PropertyDetailsController */ = {
+			isa = PBXGroup;
+			children = (
+				1819264C2530539E00CFD535 /* Property Details.swift */,
+				51D03D4B254686BF00A2E1D7 /* ModelFile */,
+			);
+			path = PropertyDetailsController;
+			sourceTree = "<group>";
+		};
+		51D03D3E254682F400A2E1D7 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				18F3FA452521F5660084412E /* Main.storyboard */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		51D03D3F2546833000A2E1D7 /* HomePageController */ = {
+			isa = PBXGroup;
+			children = (
+				18D6468A2524616C00EA2901 /* HomePage.swift */,
+			);
+			path = HomePageController;
+			sourceTree = "<group>";
+		};
+		51D03D402546835800A2E1D7 /* HomeBuyControllers */ = {
+			isa = PBXGroup;
+			children = (
+				184D2C552528792D00493819 /* Buy View.swift */,
+			);
+			path = HomeBuyControllers;
+			sourceTree = "<group>";
+		};
+		51D03D41254683DA00A2E1D7 /* RegisterController */ = {
+			isa = PBXGroup;
+			children = (
+				1848CF3C25359B820000BA5E /* Register_page2File.swift */,
+				18991EA1252B275F0023334C /* Register Page.swift */,
+				1886A85E252EFAA6001D1F81 /* Register_Page2.swift */,
+			);
+			path = RegisterController;
+			sourceTree = "<group>";
+		};
+		51D03D422546842E00A2E1D7 /* LocalityDetalisController */ = {
+			isa = PBXGroup;
+			children = (
+				1819264A253041BC00CFD535 /* Locality Details.swift */,
+				18F3AE0525319E0300D9DFB8 /* Locality Details 2.swift */,
+			);
+			path = LocalityDetalisController;
+			sourceTree = "<group>";
+		};
+		51D03D432546848500A2E1D7 /* PropertyListing */ = {
+			isa = PBXGroup;
+			children = (
+				18E693D72541B6A2007D834B /* My Listing.swift */,
+			);
+			path = PropertyListing;
+			sourceTree = "<group>";
+		};
+		51D03D44254684AA00A2E1D7 /* AmenitiesController */ = {
+			isa = PBXGroup;
+			children = (
+				18F3AE092531E47200D9DFB8 /* Amenities.swift */,
+			);
+			path = AmenitiesController;
+			sourceTree = "<group>";
+		};
+		51D03D45254685A400A2E1D7 /* PostiingDoneController */ = {
+			isa = PBXGroup;
+			children = (
+				18F3AE072531B21000D9DFB8 /* Upload PIctures.swift */,
+				18C0321E25347B3C006EADBF /* Posting done.swift */,
+			);
+			path = PostiingDoneController;
+			sourceTree = "<group>";
+		};
+		51D03D46254685DF00A2E1D7 /* ScheduleController */ = {
+			isa = PBXGroup;
+			children = (
+				18C0321C25343DF0006EADBF /* Schedule.swift */,
+			);
+			path = ScheduleController;
+			sourceTree = "<group>";
+		};
+		51D03D472546862500A2E1D7 /* ProfilePageController */ = {
+			isa = PBXGroup;
+			children = (
+				18D592E8252DBAAF00F1511B /* Profile Page.swift */,
+			);
+			path = ProfilePageController;
+			sourceTree = "<group>";
+		};
+		51D03D482546864400A2E1D7 /* ImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				18B884392524B43A0071A612 /* Imageslider.swift */,
+			);
+			path = ImageSlider;
+			sourceTree = "<group>";
+		};
+		51D03D492546865100A2E1D7 /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				184D2C5325285E4A00493819 /* PostView.swift */,
+			);
+			path = PostViewController;
+			sourceTree = "<group>";
+		};
+		51D03D4A2546866700A2E1D7 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				18F3FA3F2521F5660084412E /* AppDelegate.swift */,
+				18F3FA412521F5660084412E /* SceneDelegate.swift */,
+				18F3FA482521F56E0084412E /* Assets.xcassets */,
+				18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		51D03D4B254686BF00A2E1D7 /* ModelFile */ = {
+			isa = PBXGroup;
+			children = (
+				51D03D502546873600A2E1D7 /* DataModel.swift */,
+				51D03D4E2546872400A2E1D7 /* ApiURL.swift */,
+				51D03D4C2546871000A2E1D7 /* NetworkManager.swift */,
+			);
+			path = ModelFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +359,7 @@
 				1886A85F252EFAA6001D1F81 /* Register_Page2.swift in Sources */,
 				18991EA2252B275F0023334C /* Register Page.swift in Sources */,
 				18F3AE082531B21000D9DFB8 /* Upload PIctures.swift in Sources */,
+				51D03D512546873600A2E1D7 /* DataModel.swift in Sources */,
 				18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */,
 				1848CF3D25359B820000BA5E /* Register_page2File.swift in Sources */,
 				18D592E9252DBAAF00F1511B /* Profile Page.swift in Sources */,
@@ -229,6 +367,7 @@
 				1819264D2530539E00CFD535 /* Property Details.swift in Sources */,
 				18F3FA402521F5660084412E /* AppDelegate.swift in Sources */,
 				18F3FA422521F5660084412E /* SceneDelegate.swift in Sources */,
+				51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */,
 				18E693D82541B6A2007D834B /* My Listing.swift in Sources */,
 				184D2C562528792D00493819 /* Buy View.swift in Sources */,
 				18C0321D25343DF1006EADBF /* Schedule.swift in Sources */,
@@ -236,6 +375,7 @@
 				1819264B253041BC00CFD535 /* Locality Details.swift in Sources */,
 				18F3AE0625319E0300D9DFB8 /* Locality Details 2.swift in Sources */,
 				18D6468B2524616C00EA2901 /* HomePage.swift in Sources */,
+				51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */,
 				18B8843A2524B43A0071A612 /* Imageslider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
