@@ -36,7 +36,7 @@
 		18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */; };
 		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
 		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
-		51D03D512546873600A2E1D7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* DataModel.swift */; };
+		51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,7 +70,7 @@
 		18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo1234ViewController.swift; sourceTree = "<group>"; };
 		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
-		51D03D502546873600A2E1D7 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +267,7 @@
 		51D03D4B254686BF00A2E1D7 /* ModelFile */ = {
 			isa = PBXGroup;
 			children = (
-				51D03D502546873600A2E1D7 /* DataModel.swift */,
+				51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */,
 				51D03D4E2546872400A2E1D7 /* ApiURL.swift */,
 				51D03D4C2546871000A2E1D7 /* NetworkManager.swift */,
 			);
@@ -359,7 +359,7 @@
 				1886A85F252EFAA6001D1F81 /* Register_Page2.swift in Sources */,
 				18991EA2252B275F0023334C /* Register Page.swift in Sources */,
 				18F3AE082531B21000D9DFB8 /* Upload PIctures.swift in Sources */,
-				51D03D512546873600A2E1D7 /* DataModel.swift in Sources */,
+				51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */,
 				18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */,
 				1848CF3D25359B820000BA5E /* Register_page2File.swift in Sources */,
 				18D592E9252DBAAF00F1511B /* Profile Page.swift in Sources */,

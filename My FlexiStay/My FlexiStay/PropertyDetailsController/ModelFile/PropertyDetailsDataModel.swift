@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct ALLDataModel {
+struct PropertyDetailsDataModel {
     static var properTypeName:NSDictionary = NSDictionary()
     static var DataArr:[NSDictionary] = [NSDictionary]()
     static var ApartmentName:String = ""

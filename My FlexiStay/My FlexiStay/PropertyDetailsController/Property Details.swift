@@ -37,15 +37,21 @@ class Property_Details: UIViewController, UITextFieldDelegate {
        var activetextfield = UITextField()
        var activevlue = String()
     
+      
+       var networkManageClassInatnace = NetworkManager()
     override func viewDidLoad() {
     super.viewDidLoad()
         
+        
+        
+        
+        networkManageClassInatnace.CallGetAPI(urlstring: ApiURL.propertyDetailsLink)
         
         loadAndSetupCustomview()
         loadAndSetupTextFieldAndPickerView()
         setButtonToRightSideOfTextField()
               
-              arrData = [[]]
+           
         
         img1.Property(urlstring: imgn1)
         img2.Property(urlstring: imgn2)
@@ -91,61 +97,45 @@ class Property_Details: UIViewController, UITextFieldDelegate {
 //        floortype.dataSource = self
         txt9.delegate = self
 //        totalfloor.dataSource = self
-        
-//        txt1.inputView = aprview
-//        txt4.inputView = bhkview
-//        txt5.inputView = floortype
-//        txt9.inputView = totalfloor
-
-//        picker.delegate = self
-//        picker.dataSource = self
-//       // txt1.inputView = picker
-//        txt1.delegate = self
-//        txt2.delegate = self
-//        villa = [["Apartment", "Independant House/Villa", "Gated community Villa"],
-//                ["Apartment", "Independant House/Villa", "Gated community Villa"],
-//                ["Apartment", "Independant House/Villa", "Gated community Villa"]
-//]
-//        aprview.tag = 1
-//        bhkview.tag = 2
-//        floortype.tag = 3
-//        totalfloor.tag = 4
-
+       
+//
         
     }
+    
+    
      func textFieldDidBeginEditing(_ textField: UITextField) {
-            self.arrData.removeAll()
+           // self.arrData.removeAll()
             
             switch textField {
             case self.txt1:
                 self.textfield.text = "Select Apartment Type"
                 isOpenCustomview = true
-                self.arrData.append(["Apartment","Independent House/villa","Gated community villa"])
+              //  self.arrData.append(["Apartment","Independent House/villa","Gated community villa"])
                 activetextfield = self.txt1
             case self.txt3:
                 self.textfield.text = "Select BHK Type"
                 isOpenCustomview = true
-                self.arrData.append(["1Rk", "1BHK", "2BHK", "3BHK"])
+               // self.arrData.append(["1Rk", "1BHK", "2BHK", "3BHK"])
                 activetextfield = self.txt3
             case self.txt4:
                 self.textfield.text = "Select Floor*"
                 isOpenCustomview = true
-                self.arrData.append(["1", "2", "3", "4","5"])
+               // self.arrData.append(["1", "2", "3", "4","5"])
                 activetextfield = self.txt4
             case self.txt5:
                 self.textfield.text = "Select Floor"
                 isOpenCustomview = true
-                self.arrData.append(["1", "2", "3", "4", "5"])
+               // self.arrData.append(["1", "2", "3", "4", "5"])
                 activetextfield = self.txt5
             case self.txt6:
                 self.textfield.text = "Select property Age*"
                 isOpenCustomview = true
-                self.arrData.append(["Under Construction", "Less than a Year","1 to 3 Year"])
+               // self.arrData.append(["Under Construction", "Less than a Year","1 to 3 Year"])
                 activetextfield = self.txt6
             case self.txt9:
                 textfield.text = "Select Floor"
                 isOpenCustomview = true
-                self.arrData.append(["North", "East", "South", "West"])
+               // self.arrData.append(["North", "East", "South", "West"])
                 activetextfield = self.txt9
             default:
                 print("another selected")
@@ -229,23 +219,22 @@ class Property_Details: UIViewController, UITextFieldDelegate {
         func numberOfComponents(in pickerView: UIPickerView) -> Int {
             return 1
         }
-        
+
         func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return self.arrData[0].count
+            return PropertyDetailsDataModel.NewArrData.count
         }
-        
+
         func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return self.arrData[0][row]
+            return PropertyDetailsDataModel.NewArrData[row]
         }
-        
+
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            
-            print(self.arrData[0][row])
-            self.textfield.text = "\(self.arrData[0][row])"
-            activevlue = self.arrData[0][row]
+
+            self.textfield.text = "\(PropertyDetailsDataModel.NewArrData[row])"
+            activevlue = PropertyDetailsDataModel.NewArrData[row]
         }
-    
-    
+
+
 }
 
 extension UITextField {
