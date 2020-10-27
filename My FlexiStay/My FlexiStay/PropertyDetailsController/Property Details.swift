@@ -23,7 +23,9 @@ class Property_Details: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img1: UIImageView!
-
+ 
+    var CommontextFields = [UITextField]()
+   
     let imgn1 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-18.png"
     let imgn2 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/Icons/Back1+48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-14.png"
     
@@ -51,54 +53,18 @@ class Property_Details: UIViewController, UITextFieldDelegate {
         loadAndSetupTextFieldAndPickerView()
         setButtonToRightSideOfTextField()
               
-           
-        
-        img1.Property(urlstring: imgn1)
+           CommontextFields = [txt1, txt2,txt3, txt4, txt5, txt6, txt7,txt8,txt9]
+                  CommontextFields.forEach {
+                      $0.delegate = self
+                      $0.layer.borderWidth = 1
+                      $0.layer.borderColor = UIColor.darkGray.cgColor
+                      $0.layer.cornerRadius = 10
+                     
+                  }
+            img1.Property(urlstring: imgn1)
         img2.Property(urlstring: imgn2)
         btn1.layer.cornerRadius = 13
-        txt1.layer.borderWidth = 1
-        txt1.layer.borderColor = UIColor.darkGray.cgColor
-        txt2.layer.borderWidth = 1
-        txt2.layer.borderColor = UIColor.darkGray.cgColor
-        txt3.layer.borderWidth = 1
-        txt3.layer.borderColor = UIColor.darkGray.cgColor
-        txt4.layer.borderWidth = 1
-        txt4.layer.borderColor = UIColor.darkGray.cgColor
-        txt5.layer.borderWidth = 1
-        txt5.layer.borderColor = UIColor.darkGray.cgColor
-        txt6.layer.borderWidth = 1
-        txt6.layer.borderColor = UIColor.darkGray.cgColor
-        txt7.layer.borderWidth = 1
-        txt7.layer.borderColor = UIColor.darkGray.cgColor
-        txt8.layer.borderWidth = 1
-        txt8.layer.borderColor = UIColor.darkGray.cgColor
-        txt9.layer.borderWidth = 1
-        txt9.layer.borderColor = UIColor.darkGray.cgColor
-        txt1.layer.cornerRadius = 10
-        txt2.layer.cornerRadius = 10
-        txt3.layer.cornerRadius = 10
-        txt4.layer.cornerRadius = 10
-        txt5.layer.cornerRadius = 10
-        txt6.layer.cornerRadius = 10
-        txt7.layer.cornerRadius = 10
-        txt8.layer.cornerRadius = 10
-        txt9.layer.cornerRadius = 10
-        
-        txt1.delegate = self
-         txt2.delegate = self
-         txt3.delegate = self
-         txt6.delegate = self
-         txt7.delegate = self
-         txt8.delegate = self
-//        aprview.dataSource = self
-        txt4.delegate = self
-//        bhkview.dataSource = self
-        txt5.delegate = self
-//        floortype.dataSource = self
-        txt9.delegate = self
-//        totalfloor.dataSource = self
-       
-//
+
         
     }
     
@@ -162,7 +128,19 @@ class Property_Details: UIViewController, UITextFieldDelegate {
             
         }
     
-        func loadAndSetupCustomview(){
+    @IBAction func saveAndCotinue(_ sender: UIButton) {
+        
+        var val  = ""
+        var apartment = txt1.text!
+        if apartment.isEmpty{
+
+            txt1.placeholder = "Enter data"
+           
+       
+        }
+        
+    }
+    func loadAndSetupCustomview(){
             customview.backgroundColor = UIColor(red: 232/255, green: 232/255, blue: 232/255, alpha: 1)
             self.view.addSubview(customview)
             
