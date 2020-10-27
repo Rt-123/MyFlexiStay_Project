@@ -37,6 +37,8 @@
 		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
 		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
 		51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */; };
+		51E4BA982548276500CCBFCB /* UploadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E4BA962548276500CCBFCB /* UploadImageCell.swift */; };
+		51E4BA992548276500CCBFCB /* UploadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E4BA972548276500CCBFCB /* UploadImageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 		51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDataModel.swift; sourceTree = "<group>"; };
+		51E4BA962548276500CCBFCB /* UploadImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageCell.swift; sourceTree = "<group>"; };
+		51E4BA972548276500CCBFCB /* UploadImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 			children = (
 				18F3AE072531B21000D9DFB8 /* Upload PIctures.swift */,
 				18C0321E25347B3C006EADBF /* Posting done.swift */,
+				51E4BA962548276500CCBFCB /* UploadImageCell.swift */,
+				51E4BA972548276500CCBFCB /* UploadImageCell.xib */,
 			);
 			path = PostiingDoneController;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E4BA992548276500CCBFCB /* UploadImageCell.xib in Resources */,
 				18BBD2C7252C438400B777E8 /* metropolis in Resources */,
 				18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */,
 				18F3FA492521F56E0084412E /* Assets.xcassets in Resources */,
@@ -368,6 +375,7 @@
 				18F3FA402521F5660084412E /* AppDelegate.swift in Sources */,
 				18F3FA422521F5660084412E /* SceneDelegate.swift in Sources */,
 				51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */,
+				51E4BA982548276500CCBFCB /* UploadImageCell.swift in Sources */,
 				18E693D82541B6A2007D834B /* My Listing.swift in Sources */,
 				184D2C562528792D00493819 /* Buy View.swift in Sources */,
 				18C0321D25343DF1006EADBF /* Schedule.swift in Sources */,
