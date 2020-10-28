@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class Locality_Details_2: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img1: UIImageView!
@@ -30,7 +32,7 @@ class Locality_Details_2: UIViewController, UITextFieldDelegate{
           var customviewBottomAnchor:NSLayoutConstraint!
           var activetextfield = UITextField()
           var activevlue = String()
-
+          var CommontextFields = [UITextField]()
     let imgurl = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-18.png"
     let imgurl2 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/Icons/Back1+48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-14.png"
     
@@ -48,41 +50,130 @@ class Locality_Details_2: UIViewController, UITextFieldDelegate{
         
         ///DatePicker
         createdatepicker()
-        mainv.layer.cornerRadius = 40
-        txt1.layer.borderWidth = 1
-        txt1.layer.cornerRadius = 10
-        txt1.layer.borderColor = UIColor.gray.cgColor
-        txt2.layer.borderWidth = 1
-        txt2.layer.cornerRadius = 10
-        txt2.layer.borderColor = UIColor.gray.cgColor
-        txt3.layer.borderWidth = 1
-        txt3.layer.cornerRadius = 10
-        txt3.layer.borderColor = UIColor.gray.cgColor
-        txt4.layer.borderWidth = 1
-        txt4.layer.cornerRadius = 10
-        txt4.layer.borderColor = UIColor.gray.cgColor
-        txt5.layer.borderWidth = 1
-        txt5.layer.cornerRadius = 10
-        txt5.layer.borderColor = UIColor.gray.cgColor
-        txt6.layer.borderWidth = 1
-        txt6.layer.cornerRadius = 10
-        txt6.layer.borderColor = UIColor.gray.cgColor
-        txt7.layer.borderWidth = 1
-        txt7.layer.cornerRadius = 10
-        txt7.layer.borderColor = UIColor.gray.cgColor
-        txt1.delegate = self
-        txt2.delegate = self
-        txt3.delegate = self
-        txt4.delegate = self
-        txt5.delegate = self
-        txt6.delegate = self
-        txt7.delegate = self
         
+        CommontextFields = [txt1, txt2,txt3, txt4, txt5, txt6, txt7]
+        CommontextFields.forEach {
+            $0.delegate = self
+            $0.layer.borderWidth = 1
+            $0.layer.borderColor = UIColor.darkGray.cgColor
+            $0.layer.cornerRadius = 10
+            
+        }
+        mainv.layer.cornerRadius = 40
+//        txt1.layer.borderWidth = 1
+//        txt1.layer.cornerRadius = 10
+//        txt1.layer.borderColor = UIColor.gray.cgColor
+//        txt2.layer.borderWidth = 1
+//        txt2.layer.cornerRadius = 10
+//        txt2.layer.borderColor = UIColor.gray.cgColor
+//        txt3.layer.borderWidth = 1
+//        txt3.layer.cornerRadius = 10
+//        txt3.layer.borderColor = UIColor.gray.cgColor
+//        txt4.layer.borderWidth = 1
+//        txt4.layer.cornerRadius = 10
+//        txt4.layer.borderColor = UIColor.gray.cgColor
+//        txt5.layer.borderWidth = 1
+//        txt5.layer.cornerRadius = 10
+//        txt5.layer.borderColor = UIColor.gray.cgColor
+//        txt6.layer.borderWidth = 1
+//        txt6.layer.cornerRadius = 10
+//        txt6.layer.borderColor = UIColor.gray.cgColor
+//        txt7.layer.borderWidth = 1
+//        txt7.layer.cornerRadius = 10
+//        txt7.layer.borderColor = UIColor.gray.cgColor
+//        txt1.delegate = self
+//        txt2.delegate = self
+//        txt3.delegate = self
+//        txt4.delegate = self
+//        txt5.delegate = self
+//        txt6.delegate = self
+//        txt7.delegate = self
+        
+    }
+    @IBAction func saveAndContiue(_ sender: Any) {
+        if txt1.text!.isEmpty{
+            txt1.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else if txt2.text!.isEmpty {
+          txt2.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else if txt3.text!.isEmpty{
+            txt3.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else if txt4.text!.isEmpty{
+            txt4.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else if txt5.text!.isEmpty{
+            txt5.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else  if txt6.text!.isEmpty{
+            txt6.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else{
+             txt1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+             txt2.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            txt3.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            txt4.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+             txt5.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            txt6.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
             self.arrData.removeAll()
             
-            switch textField {
+        switch textField {
+        case txt1:
+            if txt1.text!.isEmpty{
+                
+                
+                txt1.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            }else{
+                txt1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            }
+            case txt2:
+            if txt1.text!.isEmpty{
+                
+                
+                txt1.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            }else{
+                txt1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            }
+        case txt3:
+            if txt2.text!.isEmpty{
+                           txt2.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                       }else{
+                           txt2.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                       }
+        case txt4:
+            if txt3.text!.isEmpty{
+                txt3.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            }else{
+                txt3.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            }
+            
+            case txt5:
+                      if txt4.text!.isEmpty{
+                           txt4.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                       }else{
+                           txt4.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                       }
+            case txt6:
+                       if txt5.text!.isEmpty{
+                           txt5.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                       }else{
+                           txt5.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                       }
+            case txt7:
+                       if txt6.text!.isEmpty{
+                           txt6.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                       }else{
+                           txt6.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                       }
+        default:
+            txt1.layer.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+        
+        
+        
+        
+        
+        
+        switch textField {
 //            case self.txt4:
 //                self.textfield.text = "Select Apartment Type"
 //                isOpenCustomview = true

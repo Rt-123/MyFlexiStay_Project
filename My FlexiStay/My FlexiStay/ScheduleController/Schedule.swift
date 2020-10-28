@@ -30,7 +30,7 @@ class Schedule: UIViewController, UITextFieldDelegate {
       var customviewBottomAnchor:NSLayoutConstraint!
       var activetextfield = UITextField()
       var activevlue = String()
-    
+    var CommontextFields = [UITextField]()
     override func viewDidLoad() {
         super.viewDidLoad()
         ///Drop Down list
@@ -39,28 +39,50 @@ class Schedule: UIViewController, UITextFieldDelegate {
         setButtonToRightSideOfTextField()
         arrData = [[]]
         
+        CommontextFields = [txt1, txt2,txt3]
+              CommontextFields.forEach {
+                  $0.delegate = self
+                  $0.layer.borderWidth = 1
+                  $0.layer.borderColor = UIColor.darkGray.cgColor
+                  $0.layer.cornerRadius = 10
+                  
+              }
         img2.schedule(urlstring: imgurl)
         img1.schedule(urlstring: imgurl2)
         view1.layer.cornerRadius = 40
         savebtn.layer.cornerRadius = 17
-        txt1.layer.borderWidth = 1
-        txt1.layer.borderColor = UIColor.gray.cgColor
-        txt1.layer.cornerRadius = 10
-        
-        txt2.layer.borderWidth = 1
-        txt2.layer.borderColor = UIColor.gray.cgColor
-        txt2.layer.cornerRadius = 10
-        
-        txt3.layer.borderWidth = 1
-        txt3.layer.borderColor = UIColor.gray.cgColor
-        txt3.layer.cornerRadius = 10
-        
-        txt1.delegate = self
-        txt2.delegate = self
-        txt3.delegate = self
+//        txt1.layer.borderWidth = 1
+//        txt1.layer.borderColor = UIColor.gray.cgColor
+//        txt1.layer.cornerRadius = 10
+//        
+//        txt2.layer.borderWidth = 1
+//        txt2.layer.borderColor = UIColor.gray.cgColor
+//        txt2.layer.cornerRadius = 10
+//        
+//        txt3.layer.borderWidth = 1
+//        txt3.layer.borderColor = UIColor.gray.cgColor
+//        txt3.layer.cornerRadius = 10
+//        
+//        txt1.delegate = self
+//        txt2.delegate = self
+//        txt3.delegate = self
         
     }
     
+    @IBAction func SaveAndPosting(_ sender: UIButton) {
+        if txt1.text!.isEmpty{
+                   txt1.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+               }else if txt2.text!.isEmpty {
+                 txt2.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+               }else if txt3.text!.isEmpty{
+                   txt3.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }else{
+             txt3.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            txt2.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+             txt1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        }
+        
+    }
     ///Drop Down List
     func textFieldDidBeginEditing(_ textField: UITextField) {
                   self.arrData.removeAll()
@@ -71,7 +93,18 @@ class Schedule: UIViewController, UITextFieldDelegate {
                       self.txt1.text = "Availability"
                       self.arrData.append(["Every Day(Mon-Sun)", "Weekdays(Mon-fri)", "Weekends(sat-sun)"])
                       activetextfield = self.txt1
-                      
+                  case txt2:
+                    if txt1.text!.isEmpty{
+                        txt1.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                    }else{
+                         txt1.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    }
+                  case txt3:
+                    if txt2.text!.isEmpty{
+                        txt2.layer.borderColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+                    }else{
+                         txt2.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    }
                   default:
                       print("another selected")
                       isOpenCustomview = false
