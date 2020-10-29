@@ -34,6 +34,13 @@
 		18F3FA492521F56E0084412E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA482521F56E0084412E /* Assets.xcassets */; };
 		18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */; };
 		18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */; };
+		516D2EB2254A83A200EBA516 /* AminitiesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EAF254A83A100EBA516 /* AminitiesDataModel.swift */; };
+		516D2EB3254A83A200EBA516 /* AminitiesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB0254A83A100EBA516 /* AminitiesNetworkManager.swift */; };
+		516D2EB6254A9C0000EBA516 /* DropDownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB5254A9C0000EBA516 /* DropDownModel.swift */; };
+		516D2EB8254AA14700EBA516 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */; };
+		516D2EBA254AA9B100EBA516 /* AminitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB9254AA9B100EBA516 /* AminitiesCollectionViewCell.swift */; };
+		516D2EBD254AAA1900EBA516 /* AminitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EBB254AAA1900EBA516 /* AminitiesCollectionViewCell.swift */; };
+		516D2EBE254AAA1900EBA516 /* AminitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */; };
 		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
 		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
 		51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */; };
@@ -70,6 +77,13 @@
 		18F3FA4B2521F56E0084412E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F3FA4D2521F56E0084412E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo1234ViewController.swift; sourceTree = "<group>"; };
+		516D2EAF254A83A100EBA516 /* AminitiesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AminitiesDataModel.swift; sourceTree = "<group>"; };
+		516D2EB0254A83A100EBA516 /* AminitiesNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AminitiesNetworkManager.swift; sourceTree = "<group>"; };
+		516D2EB5254A9C0000EBA516 /* DropDownModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownModel.swift; sourceTree = "<group>"; };
+		516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		516D2EB9254AA9B100EBA516 /* AminitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AminitiesCollectionViewCell.swift; path = "My FlexiStay/AmenitiesController/AminitiesCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		516D2EBB254AAA1900EBA516 /* AminitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AminitiesCollectionViewCell.xib; sourceTree = "<group>"; };
 		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 		51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDataModel.swift; sourceTree = "<group>"; };
@@ -137,6 +151,15 @@
 			path = "My FlexiStay";
 			sourceTree = "<group>";
 		};
+		516D2EAE254A83A100EBA516 /* AminitiesModelFile */ = {
+			isa = PBXGroup;
+			children = (
+				516D2EAF254A83A100EBA516 /* AminitiesDataModel.swift */,
+				516D2EB0254A83A100EBA516 /* AminitiesNetworkManager.swift */,
+			);
+			path = AminitiesModelFile;
+			sourceTree = "<group>";
+		};
 		51D03D3C2546828F00A2E1D7 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				1819264C2530539E00CFD535 /* Property Details.swift */,
-				51D03D4B254686BF00A2E1D7 /* ModelFile */,
+				51D03D4B254686BF00A2E1D7 /* PropertiesModelFile */,
 			);
 			path = PropertyDetailsController;
 			sourceTree = "<group>";
@@ -161,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				18F3FA452521F5660084412E /* Main.storyboard */,
+				516D2EB9254AA9B100EBA516 /* AminitiesCollectionViewCell.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -212,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				18F3AE092531E47200D9DFB8 /* Amenities.swift */,
+				516D2EAE254A83A100EBA516 /* AminitiesModelFile */,
+				516D2EBB254AAA1900EBA516 /* AminitiesCollectionViewCell.swift */,
+				516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */,
 			);
 			path = AmenitiesController;
 			sourceTree = "<group>";
@@ -262,22 +289,24 @@
 		51D03D4A2546866700A2E1D7 /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
+				516D2EB5254A9C0000EBA516 /* DropDownModel.swift */,
 				18F3FA3F2521F5660084412E /* AppDelegate.swift */,
 				18F3FA412521F5660084412E /* SceneDelegate.swift */,
 				18F3FA482521F56E0084412E /* Assets.xcassets */,
 				18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */,
+				516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */,
 			);
 			path = SupportingFile;
 			sourceTree = "<group>";
 		};
-		51D03D4B254686BF00A2E1D7 /* ModelFile */ = {
+		51D03D4B254686BF00A2E1D7 /* PropertiesModelFile */ = {
 			isa = PBXGroup;
 			children = (
 				51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */,
 				51D03D4E2546872400A2E1D7 /* ApiURL.swift */,
 				51D03D4C2546871000A2E1D7 /* NetworkManager.swift */,
 			);
-			path = ModelFile;
+			path = PropertiesModelFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516D2EBE254AAA1900EBA516 /* AminitiesCollectionViewCell.xib in Resources */,
 				51E4BA992548276500CCBFCB /* UploadImageCell.xib in Resources */,
 				18BBD2C7252C438400B777E8 /* metropolis in Resources */,
 				18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */,
@@ -367,6 +397,7 @@
 				18991EA2252B275F0023334C /* Register Page.swift in Sources */,
 				18F3AE082531B21000D9DFB8 /* Upload PIctures.swift in Sources */,
 				51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */,
+				516D2EB2254A83A200EBA516 /* AminitiesDataModel.swift in Sources */,
 				18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */,
 				1848CF3D25359B820000BA5E /* Register_page2File.swift in Sources */,
 				18D592E9252DBAAF00F1511B /* Profile Page.swift in Sources */,
@@ -375,6 +406,7 @@
 				18F3FA402521F5660084412E /* AppDelegate.swift in Sources */,
 				18F3FA422521F5660084412E /* SceneDelegate.swift in Sources */,
 				51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */,
+				516D2EBA254AA9B100EBA516 /* AminitiesCollectionViewCell.swift in Sources */,
 				51E4BA982548276500CCBFCB /* UploadImageCell.swift in Sources */,
 				18E693D82541B6A2007D834B /* My Listing.swift in Sources */,
 				184D2C562528792D00493819 /* Buy View.swift in Sources */,
@@ -382,8 +414,12 @@
 				18A38C73252613C6009F406D /* DemoViewController.swift in Sources */,
 				1819264B253041BC00CFD535 /* Locality Details.swift in Sources */,
 				18F3AE0625319E0300D9DFB8 /* Locality Details 2.swift in Sources */,
+				516D2EB3254A83A200EBA516 /* AminitiesNetworkManager.swift in Sources */,
 				18D6468B2524616C00EA2901 /* HomePage.swift in Sources */,
 				51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */,
+				516D2EBD254AAA1900EBA516 /* AminitiesCollectionViewCell.swift in Sources */,
+				516D2EB6254A9C0000EBA516 /* DropDownModel.swift in Sources */,
+				516D2EB8254AA14700EBA516 /* DesignableUITextField.swift in Sources */,
 				18B8843A2524B43A0071A612 /* Imageslider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
