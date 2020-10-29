@@ -24,6 +24,7 @@ class NetworkManagerAminities{
                              print(element)
 //
                             AminitiesDataModel.NewArrDataForAminities.append(element.value(forKey: "name") as! String)
+                            AminitiesDataModel.imgUrlData.append(element.value(forKey: "icon_url") as! String)
                             DispatchQueue.main.async {
                                 self.vc?.collectonRef.reloadData()
                             }

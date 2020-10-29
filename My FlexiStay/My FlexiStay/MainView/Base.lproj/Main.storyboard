@@ -892,16 +892,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hr-a0-gws">
-                                <rect key="frame" x="0.0" y="144" width="375" height="728"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="733.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Property Ad Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X9-pn-KuI">
-                                        <rect key="frame" x="94" y="61" width="188" height="15"/>
+                                        <rect key="frame" x="94" y="60.999999999999993" width="188" height="17.666666666666664"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71Q-xz-Dff">
-                                        <rect key="frame" x="27" y="125" width="119" height="27"/>
+                                        <rect key="frame" x="27" y="127.66666666666669" width="119" height="30"/>
                                         <color key="backgroundColor" red="0.058823529411764705" green="0.10588235294117647" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <state key="normal" title="Rent">
@@ -909,7 +909,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-GR-07T">
-                                        <rect key="frame" x="27" y="186" width="119" height="38"/>
+                                        <rect key="frame" x="27" y="191.66666666666669" width="119" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <state key="normal" title="PG/Hostel">
@@ -917,7 +917,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyk-TA-PLZ">
-                                        <rect key="frame" x="190" y="186" width="158" height="38"/>
+                                        <rect key="frame" x="190" y="191.66666666666669" width="158" height="38"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <state key="normal" title="Flatmates">
@@ -925,7 +925,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1t-Us-gI5">
-                                        <rect key="frame" x="189" y="125" width="159" height="27"/>
+                                        <rect key="frame" x="189" y="127.66666666666669" width="159" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <state key="normal" title="Resale">
@@ -933,7 +933,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkL-yc-X45">
-                                        <rect key="frame" x="70" y="596" width="235" height="45"/>
+                                        <rect key="frame" x="70" y="601.66666666666663" width="235" height="45"/>
                                         <color key="backgroundColor" red="0.058823529411764705" green="0.10588235294117647" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Save &amp; Continue">
@@ -1368,56 +1368,63 @@
                                         <rect key="frame" x="0.0" y="105" width="375" height="707"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="provide addtional details about your property" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeB-Tm-iAU">
-                                                <rect key="frame" x="24.333333333333343" y="30" width="326.33333333333326" height="19.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <rect key="frame" x="45.333333333333343" y="25" width="284.66666666666663" height="13"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
                                                 <color key="textColor" red="0.058823529409999999" green="0.1058823529" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bathrooms(s)*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-cy-wec">
-                                                <rect key="frame" x="10.000000000000007" y="90.333333333333343" width="111.66666666666669" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="10" y="61.333333333333343" width="100" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water supply" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-5h-wFe">
-                                                <rect key="frame" x="197.66666666666666" y="90.666666666666657" width="100.66666666666666" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="197.66666666666666" y="61.666666666666657" width="89.999999999999972" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="h15-2y-tLf">
-                                                <rect key="frame" x="10" y="119.33333333333334" width="355" height="50"/>
+                                                <rect key="frame" x="10" y="88" width="355" height="40"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhz-jV-H8n" customClass="DesignableUITextField" customModule="My_FlexiStay" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="40"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="T7I-yK-blZ"/>
+                                                            <constraint firstAttribute="height" constant="40" id="T7I-yK-blZ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="down-arrow (1)"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-bb-fOL">
-                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="167.33333333333337" height="50"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mha-bb-fOL" customClass="DesignableUITextField" customModule="My_FlexiStay" customModuleProvider="target">
+                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="167.33333333333337" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="down-arrow (1)"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNg-yH-BDR">
-                                                <rect key="frame" x="10" y="200" width="355" height="1"/>
+                                                <rect key="frame" x="10" y="148" width="355" height="1"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="uf3-Sf-NTF"/>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the available amenities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60t-Rc-a0u">
-                                                <rect key="frame" x="74.666666666666671" y="231" width="225.66666666666663" height="20.333333333333343"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="74.666666666666671" y="159" width="225.66666666666663" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="16"/>
+                                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SEb-yb-8Fh">
-                                                <rect key="frame" x="10" y="261.33333333333326" width="355" height="435.66666666666674"/>
+                                                <rect key="frame" x="10" y="185" width="355" height="512"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mbS-46-RFh">
                                                     <size key="itemSize" width="214" height="206"/>
@@ -1431,28 +1438,47 @@
                                                     <outlet property="delegate" destination="Vuw-xp-8Rv" id="GBY-VH-Noq"/>
                                                 </connections>
                                             </collectionView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAV-Of-IgH">
+                                                <rect key="frame" x="56.333333333333343" y="642" width="262.33333333333326" height="45"/>
+                                                <color key="backgroundColor" red="0.058823529409999999" green="0.1058823529" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="tE6-wc-RKh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="20"/>
+                                                <state key="normal" title="Save &amp; Continue">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="hhz-jV-H8n" firstAttribute="top" secondItem="CSt-cy-wec" secondAttribute="bottom" constant="8.6666666666666572" id="0sq-6d-Jco"/>
                                             <constraint firstItem="VNg-yH-BDR" firstAttribute="leading" secondItem="h15-2y-tLf" secondAttribute="leading" id="386-pt-zvX"/>
-                                            <constraint firstItem="VNg-yH-BDR" firstAttribute="top" secondItem="h15-2y-tLf" secondAttribute="bottom" constant="30.666666666666657" id="4rh-ll-BHN"/>
+                                            <constraint firstItem="VNg-yH-BDR" firstAttribute="top" secondItem="h15-2y-tLf" secondAttribute="bottom" constant="20" id="4rh-ll-BHN"/>
                                             <constraint firstItem="VNg-yH-BDR" firstAttribute="trailing" secondItem="h15-2y-tLf" secondAttribute="trailing" id="70W-WA-7rN"/>
                                             <constraint firstItem="CSt-cy-wec" firstAttribute="leading" secondItem="hhz-jV-H8n" secondAttribute="leading" id="8Qt-by-W6w"/>
                                             <constraint firstItem="KeB-Tm-iAU" firstAttribute="centerX" secondItem="Cyw-lk-LZf" secondAttribute="centerX" id="Eji-ek-l57"/>
                                             <constraint firstAttribute="bottom" secondItem="SEb-yb-8Fh" secondAttribute="bottom" constant="10" id="G8o-IX-92j"/>
-                                            <constraint firstItem="KeB-Tm-iAU" firstAttribute="top" secondItem="Cyw-lk-LZf" secondAttribute="top" constant="30" id="J1j-U9-GCj"/>
+                                            <constraint firstItem="KeB-Tm-iAU" firstAttribute="top" secondItem="Cyw-lk-LZf" secondAttribute="top" constant="25" id="J1j-U9-GCj"/>
                                             <constraint firstItem="60t-Rc-a0u" firstAttribute="centerX" secondItem="VNg-yH-BDR" secondAttribute="centerX" id="Lsd-ZM-yD2"/>
                                             <constraint firstItem="Mha-bb-fOL" firstAttribute="top" secondItem="7LR-5h-wFe" secondAttribute="bottom" constant="8.3333333333333286" id="MJa-we-6F0"/>
+                                            <constraint firstItem="vAV-Of-IgH" firstAttribute="centerX" secondItem="Cyw-lk-LZf" secondAttribute="centerX" id="Nk8-GJ-7Po"/>
                                             <constraint firstAttribute="trailing" secondItem="h15-2y-tLf" secondAttribute="trailing" constant="10" id="OCR-WV-dAM"/>
                                             <constraint firstItem="h15-2y-tLf" firstAttribute="leading" secondItem="Cyw-lk-LZf" secondAttribute="leading" constant="10" id="OsV-OZ-gme"/>
+                                            <constraint firstAttribute="bottom" secondItem="vAV-Of-IgH" secondAttribute="bottom" constant="20" id="W4x-dW-iiZ"/>
                                             <constraint firstAttribute="trailing" secondItem="SEb-yb-8Fh" secondAttribute="trailing" constant="10" id="cnv-6N-mFK"/>
                                             <constraint firstItem="h15-2y-tLf" firstAttribute="centerX" secondItem="Cyw-lk-LZf" secondAttribute="centerX" id="ew1-Qx-6bX"/>
                                             <constraint firstItem="SEb-yb-8Fh" firstAttribute="leading" secondItem="Cyw-lk-LZf" secondAttribute="leading" constant="10" id="jh2-Ka-w2A"/>
                                             <constraint firstItem="SEb-yb-8Fh" firstAttribute="top" secondItem="60t-Rc-a0u" secondAttribute="bottom" constant="10" id="qvJ-9J-nwz"/>
-                                            <constraint firstItem="h15-2y-tLf" firstAttribute="top" secondItem="KeB-Tm-iAU" secondAttribute="bottom" constant="70" id="vfA-BM-seM"/>
+                                            <constraint firstItem="vAV-Of-IgH" firstAttribute="width" secondItem="Cyw-lk-LZf" secondAttribute="width" multiplier="0.7" id="rkX-ub-LFa"/>
+                                            <constraint firstItem="h15-2y-tLf" firstAttribute="top" secondItem="KeB-Tm-iAU" secondAttribute="bottom" constant="50" id="vfA-BM-seM"/>
                                             <constraint firstItem="7LR-5h-wFe" firstAttribute="leading" secondItem="Mha-bb-fOL" secondAttribute="leading" id="vfE-xW-W8f"/>
-                                            <constraint firstItem="60t-Rc-a0u" firstAttribute="top" secondItem="VNg-yH-BDR" secondAttribute="bottom" constant="30" id="wbF-k2-j2u"/>
+                                            <constraint firstItem="60t-Rc-a0u" firstAttribute="top" secondItem="VNg-yH-BDR" secondAttribute="bottom" constant="10" id="wbF-k2-j2u"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eBx-82-VCH">
@@ -1509,10 +1535,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="dvP-5O-lXr"/>
                     <connections>
+                        <outlet property="BathTxt" destination="hhz-jV-H8n" id="HCg-a3-f8i"/>
                         <outlet property="collectonRef" destination="SEb-yb-8Fh" id="QUq-Ik-kh1"/>
                         <outlet property="img1" destination="OV0-12-CTm" id="Z52-rz-a0Y"/>
                         <outlet property="img2" destination="iwz-Re-mGn" id="ZcV-i7-jId"/>
                         <outlet property="view1" destination="Cyw-lk-LZf" id="0BL-NV-yzQ"/>
+                        <outlet property="waterSuplyTxt" destination="Mha-bb-fOL" id="sp8-gJ-Qn6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9K-1k-jJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1534,13 +1562,13 @@
                                         <rect key="frame" x="136" y="31" width="103" height="27"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQb-wD-DHz">
-                                        <rect key="frame" x="75" y="169" width="225" height="20"/>
+                                        <rect key="frame" x="75" y="169" width="225" height="23.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
                                         <color key="textColor" red="0.1114975696" green="0.14743057679999999" blue="0.58589500189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnB-jx-PvR">
-                                        <rect key="frame" x="40" y="295" width="118" height="32"/>
+                                        <rect key="frame" x="40" y="295" width="118" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
                                         <state key="normal" title="Edit">
@@ -1548,7 +1576,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82T-W0-ZfG">
-                                        <rect key="frame" x="223" y="295" width="112" height="32"/>
+                                        <rect key="frame" x="223" y="295" width="112" height="36"/>
                                         <color key="backgroundColor" red="0.1333333333" green="0.54901960780000003" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
                                         <state key="normal" title="Preview">
@@ -1556,7 +1584,7 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have successfully posted your property" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rea-zM-Nvb">
-                                        <rect key="frame" x="92" y="208" width="191" height="40"/>
+                                        <rect key="frame" x="92" y="208" width="191" height="46.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2232,7 +2260,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locality Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0E-TT-Kg7">
-                                                <rect key="frame" x="125" y="56" width="165" height="20"/>
+                                                <rect key="frame" x="125" y="56.000000000000007" width="165" height="23.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2298,7 +2326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2g-DJ-5Es" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5039.130434782609" y="13.392857142857142"/>
+            <point key="canvasLocation" x="5139" y="81"/>
         </scene>
         <!--Property Details-->
         <scene sceneID="JLg-8D-ZwQ">
@@ -2913,25 +2941,25 @@
                                 <rect key="frame" x="0.0" y="81" width="375" height="731"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Property Images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-Fx-S2v">
-                                        <rect key="frame" x="94.000000000000014" y="40" width="187.33333333333337" height="16"/>
+                                        <rect key="frame" x="100.66666666666669" y="40" width="174" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We can upload photos on your behalf Whats App us or mail us on" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-7d-Nfy">
-                                        <rect key="frame" x="40" y="522" width="295" height="30"/>
+                                        <rect key="frame" x="40" y="527.33333333333337" width="295" height="35"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeG-S8-KCB">
-                                        <rect key="frame" x="6.6666666666666572" y="86" width="362" height="370"/>
+                                        <rect key="frame" x="6.6666666666666572" y="88.666666666666629" width="362" height="370"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="EXo-qX-OxF">
-                                                <rect key="frame" x="38.333333333333343" y="30" width="285" height="108"/>
+                                                <rect key="frame" x="48.666666666666657" y="30.000000000000007" width="264.33333333333337" height="113.66666666666669"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-bo-k6I">
-                                                        <rect key="frame" x="95" y="0.0" width="95.333333333333314" height="40"/>
+                                                        <rect key="frame" x="84.666666666666657" y="0.0" width="95.333333333333343" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mp9-4b-nkd">
                                                                 <rect key="frame" x="0.0" y="1" width="40" height="37.666666666666671"/>
@@ -2959,13 +2987,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Photos to get more response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFF-fu-Q22">
-                                                        <rect key="frame" x="0.0" y="53" width="285" height="16"/>
+                                                        <rect key="frame" x="0.0" y="53" width="264.33333333333331" height="18.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leD-KK-RtG">
-                                                        <rect key="frame" x="72.666666666666686" y="82" width="140" height="26"/>
+                                                        <rect key="frame" x="62.333333333333343" y="84.666666666666657" width="140" height="29"/>
                                                         <color key="backgroundColor" red="0.1333333333" green="0.54901960780000003" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="140" id="43b-L2-Dgh"/>
@@ -2980,7 +3008,7 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejk-RK-Bt4">
-                                                <rect key="frame" x="20" y="168" width="322" height="1"/>
+                                                <rect key="frame" x="20" y="173.66666666666666" width="322" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="lTi-d3-0I4"/>
@@ -3024,7 +3052,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos uploaded by you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beH-rL-EOj">
-                                                <rect key="frame" x="88.666666666666671" y="219.66666666666669" width="184.66666666666663" height="20.333333333333343"/>
+                                                <rect key="frame" x="88.666666666666671" y="219.66666666666666" width="184.66666666666663" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -3046,20 +3074,20 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xTA-yi-apf">
-                                        <rect key="frame" x="19" y="582" width="337.33333333333331" height="27"/>
+                                        <rect key="frame" x="27.333333333333343" y="592.33333333333337" width="320.33333333333326" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-u1-jXZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="27"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111.66666666666667" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-SJ-cI6">
-                                                        <rect key="frame" x="0.0" y="1.3333333333333321" width="23.666666666666668" height="24.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="1.3333333333333321" width="23.666666666666668" height="27.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                                         <state key="normal" backgroundImage="teletype" catalog="system">
                                                             <color key="titleColor" red="0.1114975696" green="0.14743057679999999" blue="0.58589500189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-Tu-HwZ">
-                                                        <rect key="frame" x="27.666666666666657" y="0.0" width="89" height="27"/>
+                                                        <rect key="frame" x="27.666666666666671" y="0.0" width="84" height="30"/>
                                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                                         <state key="normal" title="0123456789">
                                                             <color key="titleColor" red="0.1114975696" green="0.14743057679999999" blue="0.58589500189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3068,14 +3096,14 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-EZ-NDS">
-                                                <rect key="frame" x="131.66666666666666" y="0.33333333333333215" width="21.666666666666657" height="26.333333333333336"/>
+                                                <rect key="frame" x="126.66666666666667" y="0.33333333333333215" width="21.666666666666671" height="29.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                                 <state key="normal" backgroundImage="message" catalog="system">
                                                     <color key="titleColor" red="0.1114975696" green="0.14743057679999999" blue="0.58589500189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RB-y7-3gw">
-                                                <rect key="frame" x="168.33333333333334" y="0.0" width="169.00000000000003" height="27"/>
+                                                <rect key="frame" x="163.33333333333331" y="0.0" width="157" height="30"/>
                                                 <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                                 <state key="normal" title="myflexistay@gmail.com">
                                                     <color key="titleColor" red="0.1114975696" green="0.14743057679999999" blue="0.58589500189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3096,7 +3124,7 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHH-UZ-0za">
-                                        <rect key="frame" x="176" y="486" width="23.333333333333343" height="16"/>
+                                        <rect key="frame" x="176" y="488.66666666666663" width="23.333333333333343" height="18.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="16"/>
                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3185,72 +3213,72 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS2-F9-N1q">
-                                <rect key="frame" x="0.0" y="144" width="375" height="751"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="748"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Ads Listed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04m-AH-ahB">
-                                        <rect key="frame" x="106" y="38" width="163" height="21"/>
+                                        <rect key="frame" x="106" y="38" width="163" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent: 20,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whS-HB-2ii">
-                                        <rect key="frame" x="20" y="99" width="103" height="21"/>
+                                        <rect key="frame" x="20" y="99" width="103" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent: 20,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qp9-k5-39d">
-                                        <rect key="frame" x="20" y="312" width="103" height="21"/>
+                                        <rect key="frame" x="20" y="312" width="103" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="18"/>
                                         <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2BHK For Rent Shital,Kothrud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-Sr-tUx">
-                                        <rect key="frame" x="20" y="130" width="200" height="21"/>
+                                        <rect key="frame" x="20" y="130" width="200" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2BHK For Rent Shital,Kothrud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-3K-EwB">
-                                        <rect key="frame" x="20" y="343" width="200" height="21"/>
+                                        <rect key="frame" x="20" y="343" width="200" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Rent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-83-a6l">
-                                        <rect key="frame" x="20" y="161" width="200" height="21"/>
+                                        <rect key="frame" x="20" y="161" width="200" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <color key="textColor" red="0.22688356164383561" green="0.52276862157534243" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Rent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-on-EoP">
-                                        <rect key="frame" x="20" y="374" width="103" height="21"/>
+                                        <rect key="frame" x="20" y="374" width="103" height="18"/>
                                         <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
                                         <color key="textColor" red="0.22688356160000001" green="0.52276862160000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="VPh-9Q-5X7">
-                                        <rect key="frame" x="308" y="99" width="47" height="83"/>
+                                        <rect key="frame" x="308" y="99" width="47" height="80"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36 × 36 area in 48 × 48 (hdpi)-9" translatesAutoresizingMaskIntoConstraints="NO" id="Idb-2J-DEL">
-                                        <rect key="frame" x="308" y="312" width="47" height="83"/>
+                                        <rect key="frame" x="308" y="312" width="47" height="80"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRv-HU-cLu">
-                                        <rect key="frame" x="20" y="216" width="138" height="43"/>
+                                        <rect key="frame" x="20" y="216" width="138" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Edit">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzY-pV-FrC">
-                                        <rect key="frame" x="20" y="429" width="138" height="43"/>
+                                        <rect key="frame" x="20" y="429" width="138" height="40"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Edit">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-zy-3iT">
-                                        <rect key="frame" x="217" y="429" width="138" height="43"/>
+                                        <rect key="frame" x="217" y="429" width="138" height="40"/>
                                         <color key="backgroundColor" red="0.22688356160000001" green="0.52276862160000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="17"/>
                                         <state key="normal" title="Un List">
@@ -3258,7 +3286,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfn-xZ-PN3">
-                                        <rect key="frame" x="217" y="216" width="138" height="43"/>
+                                        <rect key="frame" x="217" y="216" width="138" height="40"/>
                                         <color key="backgroundColor" red="0.22688356160000001" green="0.52276862160000004" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="18"/>
                                         <state key="normal" title="Published">
@@ -3266,7 +3294,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deH-fn-V06">
-                                        <rect key="frame" x="40" y="651" width="295" height="58"/>
+                                        <rect key="frame" x="40" y="651" width="295" height="55"/>
                                         <color key="backgroundColor" red="0.058823529409999999" green="0.1058823529" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="20"/>
                                         <state key="normal" title="Post Your Property">
@@ -3393,6 +3421,7 @@
         <image name="Images-11" width="481" height="361"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="down-arrow (1)" width="512" height="512"/>
         <image name="icons8-facebook-circled-48" width="48" height="48"/>
         <image name="icons8-google-plus-48" width="48" height="48"/>
         <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>

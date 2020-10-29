@@ -74,7 +74,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
             
             switch textField {
             case self.txt1:
-                self.textfield.text = "Select Apartment Type"
+                self.txt1.text = "Select Apartment Type"
                 isOpenCustomview = true
               //  self.arrData.append(["Apartment","Independent House/villa","Gated community villa"])
                 activetextfield = self.txt1
@@ -208,7 +208,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
 
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
-            self.textfield.text = "\(PropertyDetailsDataModel.NewArrData[row])"
+            self.txt1.text = "\(PropertyDetailsDataModel.NewArrData[row])"
             activevlue = PropertyDetailsDataModel.NewArrData[row]
         }
 

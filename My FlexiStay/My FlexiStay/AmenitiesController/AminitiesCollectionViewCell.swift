@@ -18,7 +18,7 @@ class AminitiesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         designView.layer.cornerRadius = 10
-        designView.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        designView.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         designView.layer.borderWidth = 0.5
     }
 

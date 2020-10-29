@@ -22,18 +22,18 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-Y1-W5K">
                                 <rect key="frame" x="60" y="0.0" width="240" height="97"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-cg-EQm">
-                                        <rect key="frame" x="10" y="33.5" width="73" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-cg-EQm">
+                                        <rect key="frame" x="20" y="38.5" width="58" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1tX-Mp-Ii9">
-                                                <rect key="frame" x="0.0" y="1" width="30" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="1" width="20" height="17.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1tX-Mp-Ii9" secondAttribute="height" multiplier="1:1" id="L4o-wP-zUQ"/>
-                                                    <constraint firstAttribute="height" constant="30" id="Rar-tB-zhN"/>
+                                                    <constraint firstAttribute="height" constant="20" id="Rar-tB-zhN"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-ON-rfQ">
-                                                <rect key="frame" x="40" y="7" width="33" height="16"/>
+                                                <rect key="frame" x="25" y="2" width="33" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Voi-cg-EQm" firstAttribute="centerY" secondItem="9xi-Y1-W5K" secondAttribute="centerY" id="Xqm-q4-hLk"/>
-                                    <constraint firstItem="Voi-cg-EQm" firstAttribute="leading" secondItem="9xi-Y1-W5K" secondAttribute="leading" constant="10" id="xqU-Bp-OdB"/>
+                                    <constraint firstItem="Voi-cg-EQm" firstAttribute="leading" secondItem="9xi-Y1-W5K" secondAttribute="leading" constant="20" id="xqU-Bp-OdB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -51,18 +51,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seM-3v-KKK">
-                                <rect key="frame" x="-24.5" y="56" width="19.5" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="icons8-checkmark-64 (1)"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGk-s0-wDz">
-                                <rect key="frame" x="27" y="33.5" width="30" height="30"/>
+                                <rect key="frame" x="37" y="38.5" width="20" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="mdK-g8-tcN"/>
+                                    <constraint firstAttribute="height" constant="20" id="mdK-g8-tcN"/>
                                     <constraint firstAttribute="width" secondItem="YGk-s0-wDz" secondAttribute="height" multiplier="1:1" id="nKh-NS-Xa6"/>
                                 </constraints>
-                                <state key="normal" image="icons8-checkmark-64 (1)"/>
+                                <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" image="icons8-circle-50"/>
+                                <state key="selected" image="WhatsApp Image 2020-10-29 at 6.25.49 PM"/>
                             </button>
                         </subviews>
                         <constraints>
@@ -87,14 +84,15 @@
             <connections>
                 <outlet property="aminitiesImg" destination="1tX-Mp-Ii9" id="V4i-13-Trw"/>
                 <outlet property="aminitiesName" destination="Qqg-ON-rfQ" id="i43-Xe-Tbn"/>
-                <outlet property="checkButon" destination="seM-3v-KKK" id="7zS-6O-TbF"/>
+                <outlet property="checkButon" destination="YGk-s0-wDz" id="jm5-FE-Qek"/>
                 <outlet property="designView" destination="9xi-Y1-W5K" id="1EP-M6-Yha"/>
             </connections>
             <point key="canvasLocation" x="318.84057971014494" y="107.47767857142857"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="WhatsApp Image 2020-10-29 at 6.25.49 PM" width="48" height="48"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="icons8-checkmark-64 (1)" width="64" height="64"/>
+        <image name="icons8-circle-50" width="50" height="50"/>
     </resources>
 </document>

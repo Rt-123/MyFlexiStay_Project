@@ -8,6 +8,27 @@
 
 import UIKit
 
+
+extension UIImageView {
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.image = image
+            }
+        }.resume()
+    }
+    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        downloaded(from: url, contentMode: mode)
+    }
+}
 class Amenities: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var mainView2: UIView!
@@ -53,6 +74,8 @@ class Amenities: UIViewController, UITextFieldDelegate {
     var activetextfield = UITextField()
     var activevlue = String()
     
+    @IBOutlet weak var waterSuplyTxt: UITextField!
+    @IBOutlet weak var BathTxt: UITextField!
     var NewInstanceAminites = NetworkManagerAminities()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +92,8 @@ class Amenities: UIViewController, UITextFieldDelegate {
         NewInstanceAminites.CallGetAPI(urlstring: AminitiesDataModel.AminitiesUrlString)
         //collectonRef.reloadData()
         NewInstanceAminites.vc = self
-       // self.firstText.setupRightImage(imageName: "down-arrow (1)")
+    self.waterSuplyTxt.setupRightImage(imageName: "down-arrow (1)")
+        self.BathTxt.setupRightImage(imageName: "down-arrow (1)")
         view1.layer.cornerRadius = 20
        view1.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
@@ -258,19 +282,30 @@ extension UIImageView {
 extension Amenities:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return AminitiesDataModel.NewArrDataForAminities.count
-        print(AminitiesDataModel.NewArrDataForAminities)
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AminitiesCollectionViewCell", for: indexPath) as! AminitiesCollectionViewCell
         cell.aminitiesName.text = AminitiesDataModel.NewArrDataForAminities[indexPath.row]
+        cell.aminitiesImg.downloaded(from: AminitiesDataModel.imgUrlData[indexPath.row]) 
+        cell.checkButon.addTarget(self, action: #selector(checkbtn(sender:)), for: .touchUpInside)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: floor(collectionView.frame.size.width - 20)/2, height: 60)
+        return CGSize(width: floor(collectionView.frame.size.width - 20)/2, height:50)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+    
+    @objc func checkbtn(sender:UIButton){
+        if sender.isSelected{
+            sender.isSelected = false
+        }else{
+              sender.isSelected = true
+        }
+        
     }
     
     

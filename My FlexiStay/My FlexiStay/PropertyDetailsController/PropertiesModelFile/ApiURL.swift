@@ -11,6 +11,8 @@ struct ApiURL{
    static let propertyDetailsLink:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/getPropertyTypes")!
     static let BHKUrlLink:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/getAllBHKTypes")!
     static let PropertyAgeType:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/getPropertyAgeTypes")!
+    static let availabilityTypeLink:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development//getAvailabilityTypes")!
+
 
    
 }

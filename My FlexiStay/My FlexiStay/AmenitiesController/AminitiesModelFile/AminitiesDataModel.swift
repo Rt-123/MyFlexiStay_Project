@@ -14,6 +14,7 @@ struct  AminitiesDataModel {
     static var AminitiesName:String = ""
    
     static var NewArrDataForAminities = [String]()
+    static var imgUrlData = [String]()
   static  let AminitiesUrlString:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/getAmenities")!
    // gaurd let AminitiesUrlString:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development//getAmenities")else{return}
 }

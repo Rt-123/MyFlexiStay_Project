@@ -30,6 +30,7 @@ class Schedule: UIViewController, UITextFieldDelegate {
       var customviewBottomAnchor:NSLayoutConstraint!
       var activetextfield = UITextField()
       var activevlue = String()
+    var newInstance = NetworkManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,24 +59,28 @@ class Schedule: UIViewController, UITextFieldDelegate {
         txt1.delegate = self
         txt2.delegate = self
         txt3.delegate = self
+        pickerview.selectRow(1, inComponent: 0, animated: true)
+ 
+      //  print(newInstance.CallGetAPI(urlstring: ApiURL.availabilityTypeLink))
         
     }
     
     ///Drop Down List
     func textFieldDidBeginEditing(_ textField: UITextField) {
-                  self.arrData.removeAll()
+                //  self.arrData.removeAll()
                   
                   switch textField {
                     case self.txt1 :
                       isOpenCustomview = true
                       self.txt1.text = "Availability"
-                      self.arrData.append(["Every Day(Mon-Sun)", "Weekdays(Mon-fri)", "Weekends(sat-sun)"])
+                     // self.arrData.append(["Every Day(Mon-Sun)", "Weekdays(Mon-fri)", "Weekends(sat-sun)"])
+                      newInstance.CallGetAPI(urlstring: ApiURL.availabilityTypeLink)
                       activetextfield = self.txt1
                       
                   default:
                       print("another selected")
                       isOpenCustomview = false
-                      self.arrData.append([])
+                     // self.arrData.append([])
                   }
 
                   if isOpenCustomview{
@@ -93,7 +98,6 @@ class Schedule: UIViewController, UITextFieldDelegate {
                           self.view.layoutIfNeeded()
                       }, completion: nil)
                   }
-                  self.pickerview.reloadAllComponents()
                   
               }
           
@@ -153,18 +157,18 @@ extension Schedule:UIPickerViewDelegate,UIPickerViewDataSource{
         }
               
         func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return self.arrData[0].count
+            return PropertyDetailsDataModel.NewArrData.count
         }
               
         func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return self.arrData[0][row]
+            return PropertyDetailsDataModel.NewArrData[row]
         }
               
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
                   
-            print(self.arrData[0][row])
-            self.textfield.text = "\(self.arrData[0][row])"
-            activevlue = self.arrData[0][row]
+            print(PropertyDetailsDataModel.NewArrData)
+            self.textfield.text = "\(PropertyDetailsDataModel.NewArrData[row])"
+            activevlue = PropertyDetailsDataModel.NewArrData[row]
         }
  
 }
