@@ -9,7 +9,7 @@
 import UIKit
 
 class AminitiesCollectionViewCell: UICollectionViewCell {
-
+//??????
     @IBOutlet weak var designView: UIView!
     @IBOutlet weak var aminitiesImg: UIImageView!
     @IBOutlet weak var checkButon: UIButton!
