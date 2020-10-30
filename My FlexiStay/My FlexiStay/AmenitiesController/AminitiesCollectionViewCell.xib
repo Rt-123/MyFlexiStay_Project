@@ -87,7 +87,7 @@
                 <outlet property="checkButon" destination="YGk-s0-wDz" id="jm5-FE-Qek"/>
                 <outlet property="designView" destination="9xi-Y1-W5K" id="1EP-M6-Yha"/>
             </connections>
-            <point key="canvasLocation" x="318.84057971014494" y="107.47767857142857"/>
+            <point key="canvasLocation" x="-133" y="89"/>
         </collectionViewCell>
     </objects>
     <resources>

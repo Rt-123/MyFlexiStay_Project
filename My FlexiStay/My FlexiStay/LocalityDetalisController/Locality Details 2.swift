@@ -46,6 +46,8 @@ class Locality_Details_2: UIViewController, UITextFieldDelegate{
         img1.local2(urlstring: imgurl)
         img2.local2(urlstring: imgurl2)
         
+        
+        
         ///DatePicker
         createdatepicker()
         mainv.layer.cornerRadius = 40
@@ -243,28 +245,3 @@ extension UIImageView {
         }
     }
 }
-
-//            case self.txt3:
-//                self.textfield.text = "Select BHK Type"
-//                isOpenCustomview = true
-//                self.arrData.append(["1Rk", "1BHK", "2BHK", "3BHK"])
-//                activetextfield = self.txt3
-//            case self.txt4:
-//                self.textfield.text = "Select Floor*"
-//                isOpenCustomview = true
-//                self.arrData.append(["1", "2", "3", "4","5"])
-//                activetextfield = self.txt4
-//            case self.txt5:
-//                self.textfield.text = "Select Floor"
-//                isOpenCustomview = true
-//                self.arrData.append(["1", "2", "3", "4", "5"])
-//                activetextfield = self.txt5
-//            case self.txt6:
-//                self.textfield.text = "Select property Age*"
-//                isOpenCustomview = true
-//                self.arrData.append(["Under Construction", "Less than a Year","1 to 3 Year"])
-//            case self.txt9:
-//                textfield.text = "Select Floor"
-//                isOpenCustomview = true
-//                self.arrData.append(["North", "East", "South", "West"])
-//                activetextfield = self.txt9

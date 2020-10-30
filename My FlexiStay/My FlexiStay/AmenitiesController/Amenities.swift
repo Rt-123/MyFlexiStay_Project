@@ -9,52 +9,12 @@
 import UIKit
 
 
-extension UIImageView {
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-            DispatchQueue.main.async() { [weak self] in
-                self?.image = image
-            }
-        }.resume()
-    }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
-    }
-}
+
 class Amenities: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var mainView2: UIView!
     @IBOutlet weak var collectonRef: UICollectionView!
-//    @IBOutlet weak var txt1: UITextField!
-//    @IBOutlet weak var savebtn: UIButton!
-//    @IBOutlet weak var txt2: UITextField!
-//    @IBOutlet weak var txt3: UITextField!
-//    @IBOutlet weak var txt4: UITextField!
-//        @IBOutlet weak var txt5: UITextField!
-//    @IBOutlet weak var txt6: UITextField!
-//    @IBOutlet weak var txt7: UITextField!
-//    @IBOutlet weak var txt8: UITextField!
-//    @IBOutlet weak var txt9: UITextField!
-//    @IBOutlet weak var txt10: UITextField!
-//    @IBOutlet weak var txt11: UITextField!
-//    @IBOutlet weak var txt12: UITextField!
-//    @IBOutlet weak var txt13: UITextField!
-//    @IBOutlet weak var txt14: UITextField!
-//    @IBOutlet weak var txt15: UITextField!
-//    @IBOutlet weak var txt16: UITextField!
-//    @IBOutlet weak var txt17: UITextField!
-//    @IBOutlet weak var txt18: UITextField!
-//    @IBOutlet weak var txt19: UITextField!
-//    @IBOutlet weak var txt20: UITextField!
-//    @IBOutlet weak var txt21: UITextField!
+
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var view1: UIView!
@@ -92,7 +52,7 @@ class Amenities: UIViewController, UITextFieldDelegate {
         NewInstanceAminites.CallGetAPI(urlstring: AminitiesDataModel.AminitiesUrlString)
         //collectonRef.reloadData()
         NewInstanceAminites.vc = self
-    self.waterSuplyTxt.setupRightImage(imageName: "down-arrow (1)")
+        self.waterSuplyTxt.setupRightImage(imageName: "down-arrow (1)")
         self.BathTxt.setupRightImage(imageName: "down-arrow (1)")
         view1.layer.cornerRadius = 20
        view1.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
@@ -223,62 +183,7 @@ extension UIImageView {
     }
 }
 
-//tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
-//    let str=""
-//
-//    var urlrequest=URLRequest(url: URL(string: str)!)
-//    urlrequest.httpMethod="GET"
-//    let config = URLSessionConfiguration.default
-//    let sessionobj=URLSession(configuration: config)
-//    let task=sessionobj.dataTask(with: urlrequest){(data, method, error)in
-//
-//        let resultdic=try!
-//    JSONSerialization.jsonObject(with: data!, options: .allowFragments)as! NSDictionary
-//
-//        var status = resultdic.value(forKey:"status")as! String
-//        var resultarray = resultdic.value(forKey: "result")as! NSArray
-//
-//        for obj in resultarray{
-//            var dicobj=obj as! NSDictionary
-//            var pname=dicobj.value(forKey:"person_name")as! String
-//            var pemail = dicobj.value(forKey: "person_email")as! String
-//            var plat = dicobj.value(forKey: "person_lat")as! String
-//            self.pnamearray.append(pname)
-//            self.pnamearray.append(pemail)
-//            self.pnamearray.append(plat)
-//        }
-//        DispatchQueue.main.async{
-//            self.tableView.reloadData()
-//        }
-//
-//    }
-//    task.resume()
-//}
-//
-//
-//override func numberOfSections(in tableView: UITableView) -> Int {
-//    // #warning Incomplete implementation, return the number of sections
-//    return 1
-//}
-//
-//override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//    // #warning Incomplete implementation, return the number of rows
-//    return pnamearray.count
-//}
-//
-//
-//override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//    let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-//
-//
-//    cell.textLabel?.text = pnamearray[indexPath.row]
-//    cell.textLabel?.text = pnamearray[indexPath.row]
-//    cell.textLabel?.text = pnamearray[indexPath.row]
-//
-//
-//
-//    return cell
-//}
+
 extension Amenities:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return AminitiesDataModel.NewArrDataForAminities.count
@@ -309,4 +214,24 @@ extension Amenities:UICollectionViewDelegate,UICollectionViewDataSource,UICollec
     }
     
     
+}
+extension UIImageView {
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.image = image
+            }
+        }.resume()
+    }
+    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        downloaded(from: url, contentMode: mode)
+    }
 }
