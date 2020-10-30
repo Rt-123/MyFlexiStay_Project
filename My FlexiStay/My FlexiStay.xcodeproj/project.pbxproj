@@ -39,6 +39,8 @@
 		516D2EB3254A83A200EBA516 /* AminitiesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB0254A83A100EBA516 /* AminitiesNetworkManager.swift */; };
 		516D2EB8254AA14700EBA516 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */; };
 		516D2EBE254AAA1900EBA516 /* AminitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */; };
+		5193C0AC254C7F09007CB35C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5193C0AB254C7F09007CB35C /* IQKeyboardManagerSwift */; };
+		5193C0B0254C9982007CB35C /* NetworkManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193C0AF254C9982007CB35C /* NetworkManage.swift */; };
 		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
 		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
 		51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */; };
@@ -81,6 +83,7 @@
 		516D2EB0254A83A100EBA516 /* AminitiesNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AminitiesNetworkManager.swift; sourceTree = "<group>"; };
 		516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AminitiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		5193C0AF254C9982007CB35C /* NetworkManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManage.swift; sourceTree = "<group>"; };
 		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 		51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDataModel.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1848CF3B25359AED0000BA5E /* Alamofire in Frameworks */,
+				5193C0AC254C7F09007CB35C /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +163,23 @@
 			path = AminitiesModelFile;
 			sourceTree = "<group>";
 		};
+		5193C0AD254C9946007CB35C /* RegisterController */ = {
+			isa = PBXGroup;
+			children = (
+				5193C0AE254C995F007CB35C /* ModelFile */,
+				5120E6B6254C452F0098A386 /* RegisterViewController.swift */,
+			);
+			path = RegisterController;
+			sourceTree = "<group>";
+		};
+		5193C0AE254C995F007CB35C /* ModelFile */ = {
+			isa = PBXGroup;
+			children = (
+				5193C0AF254C9982007CB35C /* NetworkManage.swift */,
+			);
+			path = ModelFile;
+			sourceTree = "<group>";
+		};
 		51D03D3C2546828F00A2E1D7 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				18F3FA452521F5660084412E /* Main.storyboard */,
-				5120E6B6254C452F0098A386 /* RegisterViewController.swift */,
+				5193C0AD254C9946007CB35C /* RegisterController */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -332,6 +353,7 @@
 			name = "My FlexiStay";
 			packageProductDependencies = (
 				1848CF3A25359AED0000BA5E /* Alamofire */,
+				5193C0AB254C7F09007CB35C /* IQKeyboardManagerSwift */,
 			);
 			productName = "My FlexiStay";
 			productReference = 18F3FA3C2521F5660084412E /* My FlexiStay.app */;
@@ -363,6 +385,7 @@
 			mainGroup = 18F3FA332521F5660084412E;
 			packageReferences = (
 				1848CF3925359AED0000BA5E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5193C0AA254C7F09007CB35C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 18F3FA3D2521F5660084412E /* Products */;
 			projectDirPath = "";
@@ -395,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18991EA4252B3D670023334C /* Demo2ViewController.swift in Sources */,
+				5193C0B0254C9982007CB35C /* NetworkManage.swift in Sources */,
 				18F3AE0A2531E47200D9DFB8 /* Amenities.swift in Sources */,
 				184D2C5425285E4A00493819 /* PostView.swift in Sources */,
 				18C0321F25347B3C006EADBF /* Posting done.swift in Sources */,
@@ -630,6 +654,14 @@
 				minimumVersion = 5.2.2;
 			};
 		};
+		5193C0AA254C7F09007CB35C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +669,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1848CF3925359AED0000BA5E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		5193C0AB254C7F09007CB35C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5193C0AA254C7F09007CB35C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
