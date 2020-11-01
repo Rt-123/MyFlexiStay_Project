@@ -30,7 +30,6 @@
 		18F3FA402521F5660084412E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3FA3F2521F5660084412E /* AppDelegate.swift */; };
 		18F3FA422521F5660084412E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3FA412521F5660084412E /* SceneDelegate.swift */; };
 		18F3FA442521F5660084412E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3FA432521F5660084412E /* ViewController.swift */; };
-		18F3FA472521F5660084412E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA452521F5660084412E /* Main.storyboard */; };
 		18F3FA492521F56E0084412E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA482521F56E0084412E /* Assets.xcassets */; };
 		18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */; };
 		18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAADE0253DB77600738FFF /* Demo1234ViewController.swift */; };
@@ -41,6 +40,7 @@
 		516D2EBE254AAA1900EBA516 /* AminitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */; };
 		5193C0AC254C7F09007CB35C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5193C0AB254C7F09007CB35C /* IQKeyboardManagerSwift */; };
 		5193C0B0254C9982007CB35C /* NetworkManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5193C0AF254C9982007CB35C /* NetworkManage.swift */; };
+		51A662A3254D87EC0026319A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A662A2254D87EC0026319A /* Main.storyboard */; };
 		51D03D4D2546871000A2E1D7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4C2546871000A2E1D7 /* NetworkManager.swift */; };
 		51D03D4F2546872400A2E1D7 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D4E2546872400A2E1D7 /* ApiURL.swift */; };
 		51D03D512546873600A2E1D7 /* PropertyDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */; };
@@ -73,7 +73,6 @@
 		18F3FA3F2521F5660084412E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F3FA412521F5660084412E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18F3FA432521F5660084412E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18F3FA462521F5660084412E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F3FA482521F56E0084412E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F3FA4B2521F56E0084412E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F3FA4D2521F56E0084412E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		516D2EB7254AA14700EBA516 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		516D2EBC254AAA1900EBA516 /* AminitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AminitiesCollectionViewCell.xib; sourceTree = "<group>"; };
 		5193C0AF254C9982007CB35C /* NetworkManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManage.swift; sourceTree = "<group>"; };
+		51A662A2254D87EC0026319A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		51D03D4C2546871000A2E1D7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		51D03D4E2546872400A2E1D7 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
 		51D03D502546873600A2E1D7 /* PropertyDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsDataModel.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 		51D03D3E254682F400A2E1D7 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				18F3FA452521F5660084412E /* Main.storyboard */,
+				51A662A2254D87EC0026319A /* Main.storyboard */,
 				5193C0AD254C9946007CB35C /* RegisterController */,
 			);
 			path = MainView;
@@ -401,12 +401,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A662A3254D87EC0026319A /* Main.storyboard in Resources */,
 				516D2EBE254AAA1900EBA516 /* AminitiesCollectionViewCell.xib in Resources */,
 				51E4BA992548276500CCBFCB /* UploadImageCell.xib in Resources */,
 				18BBD2C7252C438400B777E8 /* metropolis in Resources */,
 				18F3FA4C2521F56E0084412E /* LaunchScreen.storyboard in Resources */,
 				18F3FA492521F56E0084412E /* Assets.xcassets in Resources */,
-				18F3FA472521F5660084412E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,14 +455,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18F3FA452521F5660084412E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18F3FA462521F5660084412E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18F3FA4A2521F56E0084412E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
