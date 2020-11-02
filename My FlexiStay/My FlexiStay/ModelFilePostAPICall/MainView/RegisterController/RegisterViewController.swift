@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var DesignView: UIView!
     @IBOutlet weak var topImage: UIImageView!
-    @IBOutlet weak var validtion: UILabel!
+    @IBOutlet weak var validtion: UIButton!
     
     @IBOutlet weak var fiveView: UIView!
     @IBOutlet weak var frouthView: UIView!
@@ -28,6 +28,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var seconVIew: UIView!
     
+  
     var iconClick = true
     
     var CommontextFields = [UITextField]()
@@ -45,7 +46,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "passTogle"), for: .normal)
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 10, right: 0)
-        button.frame = CGRect(x: CGFloat(PasswordTextField.frame.size.width - 25), y: CGFloat(5), width: CGFloat(10), height: CGFloat(10))
+        button.frame = CGRect(x: CGFloat(PasswordTextField.frame.size.width - 25), y: CGFloat(10), width: CGFloat(20), height: CGFloat(20))
         button.addTarget(self, action: #selector(iconAction(sender:)), for: .touchUpInside)
         PasswordTextField.rightView = button
         PasswordTextField.rightViewMode = .always
@@ -75,37 +76,31 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         }
         
         intanceGetOTPCall.GetConutyId(urlString: DataModel.getCountryUrl)
-        //intanceGetOTPCall.SendOTPCallPost(urlString: DataModel.sendOTPUrl)
-        //  intanceGetOTPCall.VaidationOTPCallPost(urlString: DataModel.validateOTPUrl)
-        //  intanceGetOTPCall.GetOTPCallPost(urlString: DataModel.urlGetOTP)
-        //  intanceGetOTPCall.withoutAlmoFire()
-        //  intanceGetOTPCall.ValideOTPCall()
-        //     intanceGetOTPCall.GetOTPCall()
-        // intanceGetOTPCall.SendOTPCall()
+        
+        
+//        intanceGetOTPCall.ValideOTPCall()
+//        intanceGetOTPCall.GetOTPCall()
+//        intanceGetOTPCall.SendOTPCall()
         
     }
     
+    @IBAction func ValidationClick(_ sender: UIButton) {
+      }
     @IBAction func contiueTORegiserUser(_ sender: UIButton) {
         
-        if firstNameTextField.text != nil{
-            RegisterInputValue.firstName = firstNameTextField.text!
-        }else if LastName.text != nil{
-            RegisterInputValue.lastName = LastName.text!
-        }else if mobileTextField.text != nil{
-            RegisterInputValue.mobileNumber = mobileTextField.text!
+        
+        if mobileTextField.text!.validPhoneNumber{
+            print("Valid")
+        }else{
+            mobileTextField.placeholder = "Mobile number not Valid"
+            mobileTextField.text = ""
+            thirdView.layer.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         }
-        if firstNameTextField.text != nil && LastName.text != nil &&  (mobileTextField.text != nil){
-            intanceGetOTPCall.RegisterUserl()
-            firstView.layer.backgroundColor =  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-            
-            seconVIew.layer.backgroundColor =  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-            thirdView.layer.backgroundColor =  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-            frouthView.layer.backgroundColor =  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-            fiveView.layer.backgroundColor =  #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-        }
+    
         
     }
     @IBAction func iconAction(sender: UIButton) {
+        
         if( iconClick == true) {
             PasswordTextField.isSecureTextEntry = true
         } else {
@@ -116,20 +111,19 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        //        if mobileTextField.text?.isEmpty !== true {
-        //
-        //        }
-    }
-    
     @IBAction func sendOTP(_ sender: UIButton) {
         
-        otpTimer.isHidden = false
         
-        print("click")
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
-    }
+     intanceGetOTPCall.SendOTPCall()
+   
+        if SendOtpresponseDataModel.statusCode == "PHONE_NUMBER_ALREADY_IN_USE" {
+             otpTimer.isHidden = false
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
+        }
+           
+               
+        }
+
     
     @objc func countDown() {
         otpTimer.text = "\(count)"
@@ -147,32 +141,73 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 
 
 extension RegisterViewController:UITextViewDelegate{
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
         
         if textField == firstNameTextField{
+            if firstNameTextField.text!.isEmpty{
+                firstView.backgroundColor = UIColor.red
+            }else{
+                firstView.backgroundColor = UIColor.black
+            }
             LastName.becomeFirstResponder()
             
         }else if textField == LastName{
+            
+            if LastName.text!.isEmpty{
+                seconVIew.backgroundColor = UIColor.red
+            }else{
+                seconVIew.backgroundColor = UIColor.black
+            }
             mobileTextField.becomeFirstResponder()
         }else if textField == mobileTextField{
-            sendOtp.isHidden = true
+            if mobileTextField.text!.isEmpty{
+                thirdView.backgroundColor = UIColor.red
+            }else{
+                thirdView.backgroundColor = UIColor.black
+            }
             
             otpEnterTextfield.becomeFirstResponder()
         }else if textField == otpEnterTextfield{
+            if otpEnterTextfield.text!.isEmpty{
+                frouthView.backgroundColor = UIColor.red
+            }else{
+                frouthView.backgroundColor = UIColor.black
+            }
             PasswordTextField.becomeFirstResponder()
-        }else{
-            print("Password api call")
         }
         return true
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        CommontextFields = [firstNameTextField, LastName,mobileTextField, otpEnterTextfield, PasswordTextField]
-        CommontextFields.forEach {
-            $0.text = " "
-            
-            
-        }
+        
+        
+        
         
     }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if mobileTextField.text?.count == 9
+        {
+            RegisterInputValue.mobileNumber = mobileTextField.text!
+            sendOtp.isHidden = false
+        }else if otpEnterTextfield.text!.count == DataModel.lenngth{
+            validtion.isHidden = false
+        }else{
+            sendOtp.isHidden = true
+            validtion.isHidden = true
+          }
+        return true
+    }
 }
+extension String {
+    public var validPhoneNumber:Bool {
+        let types:NSTextCheckingResult.CheckingType = [.phoneNumber]
+        guard let detector = try? NSDataDetector(types: types.rawValue) else { return false }
+        
+        if let match = detector.matches(in: self, options: [], range: NSMakeRange(0, self.count)).first?.phoneNumber {
+            return match == self
+        }else{
+            return false
+        }
+    }
+}
+

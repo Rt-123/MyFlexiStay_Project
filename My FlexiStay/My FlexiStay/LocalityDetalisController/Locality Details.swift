@@ -18,11 +18,17 @@ class Locality_Details: UIViewController {
     @IBOutlet weak var txt4: UITextField!
     @IBOutlet weak var subbtn: UIButton!
     
+    
+    var localityPostDataPass = postAPIManager()
+    
     let imgna1 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-18.png"
     let imgna2 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/Icons/Back1+48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-14.png"
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        localityPostDataPass.createAndUpadatePropertyDetails(urlString: postAPILinks.createUpadateLocalityLnik, parameters: PostAPIParameters.createUpdateLocalityParameter)
+        
         img1.local(urlstring: imgna1)
         img2.local(urlstring: imgna2)
         subbtn.layer.cornerRadius = 17

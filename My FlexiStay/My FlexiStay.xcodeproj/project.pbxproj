@@ -47,6 +47,8 @@
 		51D4D960254B4B3E0025F3E7 /* AminitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D4D95F254B4B3E0025F3E7 /* AminitiesCollectionViewCell.swift */; };
 		51E4BA982548276500CCBFCB /* UploadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E4BA962548276500CCBFCB /* UploadImageCell.swift */; };
 		51E4BA992548276500CCBFCB /* UploadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51E4BA972548276500CCBFCB /* UploadImageCell.xib */; };
+		51EA26BC255012AA00708F84 /* postApiManagerForALL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA26BB255012AA00708F84 /* postApiManagerForALL.swift */; };
+		51EA26BE2550132000708F84 /* DataModelForPostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA26BD2550132000708F84 /* DataModelForPostAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		51D4D95F254B4B3E0025F3E7 /* AminitiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AminitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		51E4BA962548276500CCBFCB /* UploadImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageCell.swift; sourceTree = "<group>"; };
 		51E4BA972548276500CCBFCB /* UploadImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadImageCell.xib; sourceTree = "<group>"; };
+		51EA26BB255012AA00708F84 /* postApiManagerForALL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postApiManagerForALL.swift; sourceTree = "<group>"; };
+		51EA26BD2550132000708F84 /* DataModelForPostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelForPostAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +138,7 @@
 			children = (
 				18BBD2C5252C435500B777E8 /* Fonts */,
 				51D03D4A2546866700A2E1D7 /* SupportingFile */,
-				51D03D3E254682F400A2E1D7 /* MainView */,
+				51EA26BA2550127D00708F84 /* ModelFilePostAPICall */,
 				51D03D3C2546828F00A2E1D7 /* MainViewController */,
 				51D03D3F2546833000A2E1D7 /* HomePageController */,
 				51D03D3D254682BD00A2E1D7 /* PropertyDetailsController */,
@@ -335,6 +339,16 @@
 			path = TextFieldEdit;
 			sourceTree = "<group>";
 		};
+		51EA26BA2550127D00708F84 /* ModelFilePostAPICall */ = {
+			isa = PBXGroup;
+			children = (
+				51EA26BD2550132000708F84 /* DataModelForPostAPI.swift */,
+				51EA26BB255012AA00708F84 /* postApiManagerForALL.swift */,
+				51D03D3E254682F400A2E1D7 /* MainView */,
+			);
+			path = ModelFilePostAPICall;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -430,6 +444,8 @@
 				18FAADE1253DB77600738FFF /* Demo1234ViewController.swift in Sources */,
 				1848CF3D25359B820000BA5E /* Register_page2File.swift in Sources */,
 				18D592E9252DBAAF00F1511B /* Profile Page.swift in Sources */,
+				51EA26BE2550132000708F84 /* DataModelForPostAPI.swift in Sources */,
+				51EA26BC255012AA00708F84 /* postApiManagerForALL.swift in Sources */,
 				18F3FA442521F5660084412E /* ViewController.swift in Sources */,
 				1819264D2530539E00CFD535 /* Property Details.swift in Sources */,
 				18F3FA402521F5660084412E /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBE-5a-zHx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tLy-iU-VqG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -324,102 +324,96 @@
                                                 <rect key="frame" x="30" y="389" width="315" height="511"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PqR-fF-GuZ">
-                                                        <rect key="frame" x="20" y="20" width="94" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="20" width="89" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="textColor" name="myFontColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QK3-2o-67A">
-                                                        <rect key="frame" x="20" y="43" width="275" height="26"/>
+                                                        <rect key="frame" x="20" y="36" width="275" height="26"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3R3-LB-wrW">
-                                                        <rect key="frame" x="20" y="73" width="275" height="1"/>
+                                                        <rect key="frame" x="20" y="66" width="275" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="N2M-yY-eqW"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS6-VN-CVu">
-                                                        <rect key="frame" x="20" y="99.5" width="93.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="92.5" width="87" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="textColor" name="myFontColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48O-Aj-RIR">
-                                                        <rect key="frame" x="20" y="143" width="275" height="25.5"/>
+                                                        <rect key="frame" x="20" y="129" width="275" height="25.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjr-jc-u8V">
-                                                        <rect key="frame" x="20" y="177" width="275" height="1"/>
+                                                        <rect key="frame" x="20" y="163" width="275" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="WwQ-hG-wW4"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM3-D9-KFS">
-                                                        <rect key="frame" x="20" y="198" width="59" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="184" width="54" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="textColor" name="myFontColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCV-ws-9RO">
-                                                        <rect key="frame" x="20" y="237" width="157.5" height="25.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="216" width="157.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-d0-axQ">
-                                                        <rect key="frame" x="20" y="267" width="157.5" height="1"/>
+                                                        <rect key="frame" x="20" y="240" width="157.5" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="h0J-UN-U7l"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqs-ie-P2c">
-                                                        <rect key="frame" x="249" y="198" width="9" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="255.5" y="187" width="7" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" red="1" green="0.094117647060000004" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-7d-h42">
-                                                        <rect key="frame" x="20" y="288" width="38.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="261" width="35.5" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="textColor" name="myFontColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGb-sd-gUt">
-                                                        <rect key="frame" x="20" y="322" width="157.5" height="18.5"/>
+                                                        <rect key="frame" x="20" y="288" width="157.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmE-o6-UpJ">
-                                                        <rect key="frame" x="20" y="340.5" width="157.5" height="1"/>
+                                                        <rect key="frame" x="20" y="306.5" width="157.5" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Kyk-wT-avg"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PN-a4-3eO">
-                                                        <rect key="frame" x="20" y="360" width="84" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <rect key="frame" x="20" y="326" width="80" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="17"/>
                                                         <color key="textColor" name="myFontColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yKH-86-6Lq" customClass="DesignableUITextField" customModule="My_FlexiStay" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="392" width="275" height="17"/>
+                                                        <rect key="frame" x="20" y="351" width="275" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validate OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFw-cw-OAf">
-                                                        <rect key="frame" x="207" y="292" width="78" height="16"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <color key="textColor" name="myFontColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnA-nf-u15">
-                                                        <rect key="frame" x="20" y="409.5" width="275" height="1"/>
+                                                        <rect key="frame" x="20" y="368.5" width="275" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="2PI-Rk-P2o"/>
@@ -431,7 +425,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="cSs-jA-JB6"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="17"/>
                                                         <state key="normal" title="Register">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -440,13 +434,23 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUT-Jh-VzT">
-                                                        <rect key="frame" x="195" y="234" width="73" height="32"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <rect key="frame" x="227.5" y="213.5" width="63" height="25"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
                                                         <state key="normal" title="Send OTP">
                                                             <color key="titleColor" name="myFontColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="sendOTP:" destination="zBE-5a-zHx" eventType="touchUpInside" id="qDr-ON-X9m"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhx-f3-ZCK">
+                                                        <rect key="frame" x="227.5" y="253" width="82" height="25"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
+                                                        <state key="normal" title="Validate OTP">
+                                                            <color key="titleColor" name="myFontColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="ValidationClick:" destination="zBE-5a-zHx" eventType="touchUpInside" id="drO-Jn-FQ0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -456,11 +460,10 @@
                                                     <constraint firstItem="mmE-o6-UpJ" firstAttribute="leading" secondItem="UGb-sd-gUt" secondAttribute="leading" id="4PW-6s-Ff0"/>
                                                     <constraint firstItem="1PN-a4-3eO" firstAttribute="top" secondItem="mmE-o6-UpJ" secondAttribute="bottom" constant="18.166666666666629" id="52T-2N-D50"/>
                                                     <constraint firstItem="mmE-o6-UpJ" firstAttribute="top" secondItem="UGb-sd-gUt" secondAttribute="bottom" constant="0.16666666666662877" id="6OQ-Z5-vUf"/>
-                                                    <constraint firstItem="nFw-cw-OAf" firstAttribute="centerY" secondItem="vmk-7d-h42" secondAttribute="centerY" id="82i-Xo-vFy"/>
                                                     <constraint firstItem="QK3-2o-67A" firstAttribute="top" secondItem="PqR-fF-GuZ" secondAttribute="bottom" constant="-1" id="84x-pj-jQn"/>
                                                     <constraint firstItem="ZnA-nf-u15" firstAttribute="top" secondItem="yKH-86-6Lq" secondAttribute="bottom" constant="0.33333333333337123" id="8Y8-rg-yBM"/>
                                                     <constraint firstItem="yKH-86-6Lq" firstAttribute="trailing" secondItem="48O-Aj-RIR" secondAttribute="trailing" id="9dX-lm-UhC"/>
-                                                    <constraint firstItem="Xqs-ie-P2c" firstAttribute="leading" secondItem="xM3-D9-KFS" secondAttribute="trailing" constant="170" id="AAw-5k-hTQ"/>
+                                                    <constraint firstItem="Xqs-ie-P2c" firstAttribute="centerX" secondItem="XUT-Jh-VzT" secondAttribute="centerX" id="9g9-IK-aAo"/>
                                                     <constraint firstItem="0kT-d0-axQ" firstAttribute="top" secondItem="NCV-ws-9RO" secondAttribute="bottom" constant="4.5" id="AU9-Mm-Vv2"/>
                                                     <constraint firstAttribute="bottom" secondItem="ArI-eB-O6d" secondAttribute="bottom" constant="32" id="DTv-Td-ttj"/>
                                                     <constraint firstItem="UGb-sd-gUt" firstAttribute="width" secondItem="hcY-A0-lIE" secondAttribute="width" multiplier="0.5" id="Dhc-22-I6i"/>
@@ -472,8 +475,7 @@
                                                     <constraint firstItem="bS6-VN-CVu" firstAttribute="top" secondItem="3R3-LB-wrW" secondAttribute="bottom" constant="25.333333333333314" id="K1E-0a-SxI"/>
                                                     <constraint firstItem="3R3-LB-wrW" firstAttribute="leading" secondItem="QK3-2o-67A" secondAttribute="leading" id="MPB-0h-L9Y"/>
                                                     <constraint firstItem="UGb-sd-gUt" firstAttribute="top" secondItem="vmk-7d-h42" secondAttribute="bottom" constant="10" id="Mox-he-dwF"/>
-                                                    <constraint firstItem="XUT-Jh-VzT" firstAttribute="leading" secondItem="NCV-ws-9RO" secondAttribute="trailing" constant="17.5" id="OoP-wh-4fD"/>
-                                                    <constraint firstItem="Xqs-ie-P2c" firstAttribute="centerY" secondItem="xM3-D9-KFS" secondAttribute="centerY" id="Pjl-kr-7J9"/>
+                                                    <constraint firstItem="XUT-Jh-VzT" firstAttribute="leading" secondItem="NCV-ws-9RO" secondAttribute="trailing" constant="50" id="OoP-wh-4fD"/>
                                                     <constraint firstItem="48O-Aj-RIR" firstAttribute="trailing" secondItem="3R3-LB-wrW" secondAttribute="trailing" id="QsL-eb-g7r"/>
                                                     <constraint firstItem="NCV-ws-9RO" firstAttribute="top" secondItem="xM3-D9-KFS" secondAttribute="bottom" constant="15" id="RRR-Yk-lK0"/>
                                                     <constraint firstItem="Rjr-jc-u8V" firstAttribute="trailing" secondItem="48O-Aj-RIR" secondAttribute="trailing" id="Sbd-no-Xdc"/>
@@ -486,6 +488,7 @@
                                                     <constraint firstItem="XUT-Jh-VzT" firstAttribute="centerY" secondItem="NCV-ws-9RO" secondAttribute="centerY" id="d9I-17-j49"/>
                                                     <constraint firstItem="vmk-7d-h42" firstAttribute="leading" secondItem="0kT-d0-axQ" secondAttribute="leading" id="dQA-Js-leM"/>
                                                     <constraint firstItem="ZnA-nf-u15" firstAttribute="trailing" secondItem="yKH-86-6Lq" secondAttribute="trailing" id="dR3-S8-KAH"/>
+                                                    <constraint firstItem="XUT-Jh-VzT" firstAttribute="top" secondItem="Xqs-ie-P2c" secondAttribute="bottom" constant="10.5" id="dc2-e7-0xf"/>
                                                     <constraint firstItem="NCV-ws-9RO" firstAttribute="width" secondItem="hcY-A0-lIE" secondAttribute="width" multiplier="0.5" id="eSf-jG-Sai"/>
                                                     <constraint firstItem="xM3-D9-KFS" firstAttribute="leading" secondItem="Rjr-jc-u8V" secondAttribute="leading" id="fH8-Dv-k46"/>
                                                     <constraint firstItem="48O-Aj-RIR" firstAttribute="leading" secondItem="3R3-LB-wrW" secondAttribute="leading" id="fZK-7R-nlH"/>
@@ -495,12 +498,13 @@
                                                     <constraint firstItem="48O-Aj-RIR" firstAttribute="top" secondItem="bS6-VN-CVu" secondAttribute="bottom" constant="19.5" id="m5z-FN-hjL"/>
                                                     <constraint firstItem="bS6-VN-CVu" firstAttribute="leading" secondItem="3R3-LB-wrW" secondAttribute="leading" id="ofQ-HS-pTb"/>
                                                     <constraint firstItem="QK3-2o-67A" firstAttribute="leading" secondItem="hcY-A0-lIE" secondAttribute="leading" constant="20" id="pBM-H3-pcy"/>
+                                                    <constraint firstItem="hhx-f3-ZCK" firstAttribute="leading" secondItem="XUT-Jh-VzT" secondAttribute="leading" id="qSR-gs-1ua"/>
                                                     <constraint firstItem="ArI-eB-O6d" firstAttribute="centerX" secondItem="hcY-A0-lIE" secondAttribute="centerX" id="sye-R7-nIe"/>
                                                     <constraint firstItem="PqR-fF-GuZ" firstAttribute="leading" secondItem="hcY-A0-lIE" secondAttribute="leading" constant="20" id="w9m-og-seH"/>
                                                     <constraint firstAttribute="trailing" secondItem="QK3-2o-67A" secondAttribute="trailing" constant="20" id="xSu-Hg-Z3a"/>
                                                     <constraint firstItem="Rjr-jc-u8V" firstAttribute="top" secondItem="48O-Aj-RIR" secondAttribute="bottom" constant="8.5" id="xUh-dF-cgd"/>
                                                     <constraint firstItem="ArI-eB-O6d" firstAttribute="width" secondItem="hcY-A0-lIE" secondAttribute="width" multiplier="0.7" id="xZp-W3-dbg"/>
-                                                    <constraint firstItem="nFw-cw-OAf" firstAttribute="leading" secondItem="vmk-7d-h42" secondAttribute="trailing" constant="148.5" id="zEk-1W-1Ib"/>
+                                                    <constraint firstItem="hhx-f3-ZCK" firstAttribute="top" secondItem="XUT-Jh-VzT" secondAttribute="bottom" constant="14.5" id="zOO-pM-RXJ"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -555,7 +559,7 @@
                         <outlet property="sendOtp" destination="XUT-Jh-VzT" id="jlF-ZU-ezF"/>
                         <outlet property="thirdView" destination="0kT-d0-axQ" id="MXe-23-hS3"/>
                         <outlet property="topImage" destination="vdM-Rz-z0j" id="imL-01-vg3"/>
-                        <outlet property="validtion" destination="nFw-cw-OAf" id="DY6-9U-cs0"/>
+                        <outlet property="validtion" destination="hhx-f3-ZCK" id="lNS-fc-exf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2y-hk-8wW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

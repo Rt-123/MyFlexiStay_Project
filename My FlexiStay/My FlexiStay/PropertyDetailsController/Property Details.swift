@@ -24,6 +24,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img1: UIImageView!
  
+    var postDataPass = postAPIManager()
     var CommontextFields = [UITextField]()
    
     let imgn1 = "https://myflexistay-dev-icons.s3.ap-south-1.amazonaws.com/48+%C3%97+48+area+in+64+%C3%97+64+(xhdpi)-18.png"
@@ -47,7 +48,8 @@ class Property_Details: UIViewController, UITextFieldDelegate {
         
         
         
-        networkManageClassInatnace.CallGetAPI(urlstring: ApiURL.propertyDetailsLink)
+       // networkManageClassInatnace.CallGetAPI(urlstring: ApiURL.propertyDetailsLink)
+        postDataPass.createAndUpadatePropertyDetails(urlString: postAPILinks.createUpadatePropertyDetailsLik, parameters: PostAPIParameters.creatUpdateParameter)
         
         loadAndSetupCustomview()
         loadAndSetupTextFieldAndPickerView()

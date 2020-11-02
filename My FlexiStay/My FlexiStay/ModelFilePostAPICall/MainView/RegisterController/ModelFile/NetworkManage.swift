@@ -29,7 +29,7 @@ class NetworkManagerGetOTP {
          
         var urlRequest = URLRequest.init(url: urlString, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)
         urlRequest.httpMethod = "POST"
-        var sendOtpParameter = ["country_id":1,"mobile": 9606349900]
+        let sendOtpParameter = ["country_id":1,"mobile": RegisterInputValue.mobileNumber] as [String : Any]
 
        // urlRequest.httpBody = sendOtpParameter.data(using: .utf8)
         guard let httpBody = try? JSONSerialization.data(withJSONObject: sendOtpParameter, options: []) else{return}
@@ -40,8 +40,15 @@ class NetworkManagerGetOTP {
                 
                 do{
               
-                    let response = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSDictionary
-                  print(response)
+                    let MainDict = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSDictionary
+                     
+                    let response  = MainDict.value(forKey: "response") as! NSDictionary
+                    
+                    SendOtpresponseDataModel.statusCode = response.value(forKey: "statusCode") as! String
+                    
+                    print(SendOtpresponseDataModel.statusCode)
+                
+                      
                 }catch{
                     print(error.localizedDescription)
                 }
@@ -58,7 +65,7 @@ class NetworkManagerGetOTP {
          
         var urlRequest = URLRequest.init(url: urlString, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)
         urlRequest.httpMethod = "POST"
-     var validatioOtpPara = [ "country_id": 1,"mobile": 9309924851,"otp": 174730]
+        let validatioOtpPara = [ "country_id": 1,"mobile": RegisterInputValue.mobileNumber,"otp": 174730] as [String : Any]
        // urlRequest.httpBody = sendOtpParameter.data(using: .utf8)
        
        // urlRequest.httpBody = validatioOtpPara.percentEncoded()
@@ -103,7 +110,9 @@ class NetworkManagerGetOTP {
                    do{
                  
                        let response = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSDictionary
-                       print(response)
+                    DataModel.MainDict = response.value(forKey: "otp_type") as! NSDictionary
+                    DataModel.lenngth = DataModel.MainDict.value(forKey: "length") as! Int
+                    print(DataModel.lenngth)
                    }catch{
                        print(error.localizedDescription)
                    }
@@ -160,6 +169,9 @@ struct DataModel{
     static var otpLength = 0
     static var expirationTime = 0
     static var resendTime = 0
+    static var lenngth = 0
+    
+    
     
     //get Country
     static var country_Id:Int = 0
@@ -184,4 +196,10 @@ struct RegisterInputValue {
     static  var mobileNumber = ""
     static  var password = ""
     
+}
+struct SendOtpresponseDataModel {
+   static let succussful = "OTP_SENT_SUCCESSFULLY"
+   static let MoblieUsed = "PHONE_NUMBER_ALREADY_IN_USE"
+    static let IncorrectMob = "INCORRECT_MOBILE_NUMBER"
+    static var statusCode = ""
 }
