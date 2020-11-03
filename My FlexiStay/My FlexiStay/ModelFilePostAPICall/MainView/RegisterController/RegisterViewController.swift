@@ -78,13 +78,15 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         intanceGetOTPCall.GetConutyId(urlString: DataModel.getCountryUrl)
         
         
-//        intanceGetOTPCall.ValideOTPCall()
-//        intanceGetOTPCall.GetOTPCall()
-//        intanceGetOTPCall.SendOTPCall()
+        intanceGetOTPCall.ValideOTPCall()
+        intanceGetOTPCall.GetOTPCall()
+        intanceGetOTPCall.SendOTPCall()
         
     }
     
     @IBAction func ValidationClick(_ sender: UIButton) {
+        intanceGetOTPCall.ValideOTPCall()
+
       }
     @IBAction func contiueTORegiserUser(_ sender: UIButton) {
         
@@ -96,7 +98,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             mobileTextField.text = ""
             thirdView.layer.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         }
-    
+      
+//        if firstNameTextField.text != nil && LastName.text != nil{
+//
+//            if mobileTextField.text != nil && PasswordTextField.text != nil && otpEnterTextfield.text !=  nil{
+//              print("Register")
+//            }
+//
+//        }
         
     }
     @IBAction func iconAction(sender: UIButton) {
@@ -150,7 +159,7 @@ extension RegisterViewController:UITextViewDelegate{
             if firstNameTextField.text!.isEmpty{
                 firstView.backgroundColor = UIColor.red
             }else{
-                firstView.backgroundColor = UIColor.black
+                firstView.backgroundColor = UIColor.lightGray
             }
             LastName.becomeFirstResponder()
             
@@ -159,14 +168,14 @@ extension RegisterViewController:UITextViewDelegate{
             if LastName.text!.isEmpty{
                 seconVIew.backgroundColor = UIColor.red
             }else{
-                seconVIew.backgroundColor = UIColor.black
+                seconVIew.backgroundColor = UIColor.lightGray
             }
             mobileTextField.becomeFirstResponder()
         }else if textField == mobileTextField{
             if mobileTextField.text!.isEmpty{
                 thirdView.backgroundColor = UIColor.red
             }else{
-                thirdView.backgroundColor = UIColor.black
+                thirdView.backgroundColor = UIColor.lightGray
             }
             
             otpEnterTextfield.becomeFirstResponder()
@@ -174,7 +183,7 @@ extension RegisterViewController:UITextViewDelegate{
             if otpEnterTextfield.text!.isEmpty{
                 frouthView.backgroundColor = UIColor.red
             }else{
-                frouthView.backgroundColor = UIColor.black
+                frouthView.backgroundColor = UIColor.lightGray
             }
             PasswordTextField.becomeFirstResponder()
         }
@@ -189,11 +198,12 @@ extension RegisterViewController:UITextViewDelegate{
         {
             RegisterInputValue.mobileNumber = mobileTextField.text!
             sendOtp.isHidden = false
-        }else if otpEnterTextfield.text!.count == DataModel.lenngth{
+        }else if otpEnterTextfield.text!.count == 5{
+           
             validtion.isHidden = false
         }else{
             sendOtp.isHidden = true
-            validtion.isHidden = true
+           // validtion.isHidden = true
           }
         return true
     }

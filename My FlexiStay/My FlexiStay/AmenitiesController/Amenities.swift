@@ -36,10 +36,15 @@ class Amenities: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var waterSuplyTxt: UITextField!
     @IBOutlet weak var BathTxt: UITextField!
+    
     var NewInstanceAminites = NetworkManagerAminities()
+    var aminitiesPostDatapass = postAPIManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        aminitiesPostDatapass.allPostAPICall(urlString: postAPILinks.aminitiesPostLnik, parameters: PostAPIParameters.aminitiesPostParameters)
+        NewInstanceAminites.AminitiesWaterSuply(urlstring: AminitiesDataModel.aminitiesWaterSuplyLink)
         loadAndSetupCustomview()
         loadAndSetupTextFieldAndPickerView()
         setButtonToRightSideOfTextField()
@@ -53,9 +58,9 @@ class Amenities: UIViewController, UITextFieldDelegate {
         //collectonRef.reloadData()
         NewInstanceAminites.vc = self
         self.waterSuplyTxt.setupRightImage(imageName: "down-arrow (1)")
-        self.BathTxt.setupRightImage(imageName: "down-arrow (1)")
         view1.layer.cornerRadius = 20
        view1.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
     }
 //        func textFieldDidBeginEditing(_ textField: UITextField) {
 //                //self.arrData.removeAll()

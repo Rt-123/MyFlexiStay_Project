@@ -32,6 +32,7 @@ class Schedule: UIViewController, UITextFieldDelegate {
       var activevlue = String()
     var newInstance = NetworkManager()
     
+    var schedulePostDatapass = postAPIManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         ///Drop Down list
@@ -62,6 +63,7 @@ class Schedule: UIViewController, UITextFieldDelegate {
         pickerview.selectRow(1, inComponent: 0, animated: true)
  
       //  print(newInstance.CallGetAPI(urlstring: ApiURL.availabilityTypeLink))
+        schedulePostDatapass.allPostAPICall(urlString: postAPILinks.createUpadatescheduleLnik, parameters: PostAPIParameters.CraeteUpadtescheduleParamerter)
         
     }
     

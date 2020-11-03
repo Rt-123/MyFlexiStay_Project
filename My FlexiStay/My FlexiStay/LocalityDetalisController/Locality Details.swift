@@ -27,7 +27,7 @@ class Locality_Details: UIViewController {
         super.viewDidLoad()
 
         
-        localityPostDataPass.createAndUpadatePropertyDetails(urlString: postAPILinks.createUpadateLocalityLnik, parameters: PostAPIParameters.createUpdateLocalityParameter)
+        localityPostDataPass.allPostAPICall(urlString: postAPILinks.createUpadateLocalityLnik, parameters: PostAPIParameters.createUpdateLocalityParameter)
         
         img1.local(urlstring: imgna1)
         img2.local(urlstring: imgna2)

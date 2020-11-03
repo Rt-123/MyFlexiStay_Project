@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-class NetworkManagerGetOTP {
+class NetworkManagerGetOTP{
 
     // getCountry Call
     func GetConutyId(urlString:URL){

@@ -49,7 +49,7 @@ class Property_Details: UIViewController, UITextFieldDelegate {
         
         
        // networkManageClassInatnace.CallGetAPI(urlstring: ApiURL.propertyDetailsLink)
-        postDataPass.createAndUpadatePropertyDetails(urlString: postAPILinks.createUpadatePropertyDetailsLik, parameters: PostAPIParameters.creatUpdateParameter)
+        postDataPass.allPostAPICall(urlString: postAPILinks.createUpadatePropertyDetailsLik, parameters: PostAPIParameters.creatUpdateParameter)
         
         loadAndSetupCustomview()
         loadAndSetupTextFieldAndPickerView()

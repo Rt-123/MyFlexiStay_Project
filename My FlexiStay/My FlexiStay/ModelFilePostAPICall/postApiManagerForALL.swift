@@ -9,7 +9,7 @@
 import Foundation
 
 class postAPIManager{
-    func createAndUpadatePropertyDetails(urlString:URL,parameters:[String:Any]){
+    func allPostAPICall(urlString:URL,parameters:[String:Any]){
         guard  let urlString:URL = urlString else{return}
                 
                var urlRequest = URLRequest.init(url: urlString, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 30)

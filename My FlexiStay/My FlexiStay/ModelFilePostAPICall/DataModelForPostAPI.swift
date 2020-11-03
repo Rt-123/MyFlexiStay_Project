@@ -13,6 +13,9 @@ struct postAPILinks{
     
     static var createUpadatePropertyDetailsLik:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/createOrUpdatePropertyDetails")!
     static var createUpadateLocalityLnik:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/createOrUpdateLocalityDetails")!
+   static var createUpadatescheduleLnik:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/createOrUpdateLocalityDetails")!
+    static var aminitiesPostLnik:URL = URL(string: "https://acabc9536i.execute-api.ap-south-1.amazonaws.com/development/addAmenity")!
+
 
 }
 struct PostAPIParameters {
@@ -46,4 +49,17 @@ static var createUpdateLocalityParameter = ["listing_id": 1,
 "s_token": "RC4CWvgitxUSPrP1cSoqJoj4YEqiek6l98qPrglU1DtEc2n3GDdG6paEIeGXsbPs"
 ] as [String : Any]
 
+    
+    static var CraeteUpadtescheduleParamerter = ["listing_id": 2,
+    "s_token": "RC4CWvgitxUSPrP1cSoqJoj4YEqiek6l98qPrglU1DtEc2n3GDdG6paEIeGXsbPs",
+    "availability_type_id": 1,
+    "from_interval_id": 1,
+    "to_interval_id": 94
+        ] as [String : Any]
+    
+    
+    static var aminitiesPostParameters = [ "s_token": "RC4CWvgitxUSPrP1cSoqJoj4YEqiek6l98qPrglU1DtEc2n3GDdG6paEIeGXsbPs",
+     "listing_id": 2,
+     "amenity_id": 1
+        ] as [String : Any]
 }
